@@ -19,6 +19,7 @@ const Home = () => {
                 <div className="SignUp" onClick={() => navigate("/signup")}>회원가입</div>
             </div>
             <Introduction/>
+            
         </div>
     );
 };
