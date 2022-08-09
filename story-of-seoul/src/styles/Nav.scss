@@ -1,0 +1,58 @@
+
+$PageSelectorWrapperWidth: 600px;
+$PageSelectorMargin : 30px;
+$NavBorderBottomRadius: 30px;
+
+.Nav {
+
+    width: 100vw;
+    min-width: 800px;
+    overflow: hidden;
+    height: 60px;
+    border-bottom-left-radius: $NavBorderBottomRadius $NavBorderBottomRadius;
+    border-bottom-right-radius: $NavBorderBottomRadius $NavBorderBottomRadius;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #F8F3E1;
+    
+    .ImgaeWrapper {
+        height: inherit;
+        margin-left: 40px;
+        
+        img {
+            width: 100px;
+        }
+    }
+
+    .PageSelectorWrapper {
+        
+        width: $PageSelectorWrapperWidth;
+        height: inherit;
+
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+
+        margin-right: 100px;
+
+        #notice {
+            margin-right: $PageSelectorMargin;
+        }
+        #analysis {
+            margin-right: $PageSelectorMargin;
+        }
+        #citizen-participation{
+            margin-right: $PageSelectorMargin;
+        }
+        #data-request {
+            margin-right: $PageSelectorMargin;
+        }
+        
+    }
+    
+}
