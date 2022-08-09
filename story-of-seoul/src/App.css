@@ -1,11 +1,7 @@
 
 
+
 .App {
-  width: 1.0rm;
-  height: 200ps;
-  text-align:center;
-  font-size: 100px;
-  background: #FFE69A;
-  line-height: 200px;
-  border: 1px solid black;
+  width: 100%;
+
 }
