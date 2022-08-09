@@ -1,0 +1,35 @@
+
+@import './utils.scss';
+
+.Home {
+    
+    height: 100vh;
+
+    .SignInOrSignUpWrapper {
+        position: absolute;
+        right: 0;
+        top: $NavHeight;
+        
+        
+        border-radius: 30px;
+        background: $ContentBackgound;
+        width: 160px;
+        height: fit-content;
+
+        margin-top: 10px;
+        margin-right: 30px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .SignIn {
+            margin-right: 8px;
+        }
+
+        .SignUp {
+            margin-left: 8px;
+        }
+        
+    }
+}

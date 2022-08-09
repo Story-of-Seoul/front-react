@@ -1,0 +1,32 @@
+
+
+
+
+.Introduction {
+
+    width: 97%;
+    height: 574px;
+
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .InfoText {
+        text-align: center;
+        white-space: nowrap;
+        margin-left: 200px;
+        font-size: 24px;
+    }
+
+    img {
+        width: 900px;
+        height: 571px;
+    }
+}

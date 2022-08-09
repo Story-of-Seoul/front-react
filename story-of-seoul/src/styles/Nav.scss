@@ -1,14 +1,12 @@
 
-$PageSelectorWrapperWidth: 600px;
-$PageSelectorMargin : 30px;
-$NavBorderBottomRadius: 30px;
+@import './utils.scss';
 
 .Nav {
 
     width: 100vw;
     min-width: 800px;
     overflow: hidden;
-    height: 60px;
+    height: $NavHeight;
     border-bottom-left-radius: $NavBorderBottomRadius $NavBorderBottomRadius;
     border-bottom-right-radius: $NavBorderBottomRadius $NavBorderBottomRadius;
 
@@ -17,7 +15,7 @@ $NavBorderBottomRadius: 30px;
     justify-content: space-between;
     align-items: center;
 
-    background: #F8F3E1;
+    background: $NavBackground;
     
     .ImgaeWrapper {
         height: inherit;
