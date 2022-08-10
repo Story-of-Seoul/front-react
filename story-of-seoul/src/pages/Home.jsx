@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import Introduction from '../components/Introduction';
 import SearchInsert from '../components/SearchInsert';
 import AnalysisContainer from '../containers/AnalysisContainer';
+import HotBoardContainer from '../containers/HotBoardContainer';
+import NoticeBoardContainer from '../containers/NoticeBoardContainer';
 import SearchResultContainer from '../containers/SearchResultContainer';
 
 import '../styles/Home.scss';
@@ -40,10 +42,24 @@ const Home = () => {
                     <SearchResultContainer/>
                     <div className="KeywordWrapper">
                         {keywords.map(keyword => (
-                            <div className='Keyword'>{keyword}</div>
+                            <div className='Keyword'>#{keyword}</div>
                         ))}
                     </div>
-                    
+                </div>
+            </div>
+
+            <div className="BoardContentsWrapper">
+                <div className="NoticeWrapper">
+                    <div id="title">
+                        공지사항
+                    </div>
+                    <NoticeBoardContainer/>
+                </div>
+                <div className="HotBoardWrapper">
+                    <div id="title">
+                        인기글
+                    </div>
+                    <HotBoardContainer/>
                 </div>
             </div>
             
