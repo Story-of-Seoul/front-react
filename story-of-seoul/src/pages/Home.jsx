@@ -25,9 +25,9 @@ const Home = () => {
         <div className='Home'>
             {/* todo : 로그인 했을 경우에는 로그아웃 버튼 띄우기 */}
             <div className="SignInOrSignUpWrapper">
-                <div className="SignIn" onClick={() => navigate("/signin")}>로그인</div>
+                <div className="SignInButton" onClick={() => navigate("/signin")}>로그인</div>
                 <div>/</div>
-                <div className="SignUp" onClick={() => navigate("/signup")}>회원가입</div>
+                <div className="SignUpButton" onClick={() => navigate("/signup")}>회원가입</div>
             </div>
             <Introduction/>
             <div className="ContentsTitle">인기 데이터 분석</div>
