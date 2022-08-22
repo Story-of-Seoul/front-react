@@ -91,59 +91,16 @@
           width: 300px;
           margin-right: 10px;
         }
-
-        .dropdown {
-
-          button {
-            width: 400px;
-          }
-        }
       }
 
-
-      .dropdown {
-        position: relative;
-        display: inline-block;
-
-        .dropbtn {
-          background-color: $BaseBackground;
-          color: #a9a9a9;
-          line-height: 37px;
-        }
-
-        .dropdown-content {
-          display: none;
-          height: 45px;
-          overflow-y: scroll;
-
-          position: absolute;
-          background-color: #f1f1f1;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          z-index: 1;
-
-          .dropdown-content div {
-            color: black;
-            cursor: pointer;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-          }
-
-
-        }
-      }
-
-      .dropdown-content div:hover {
-        background-color: #ddd;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-      .dropdown:hover .dropbtn {
-        background-color: $PointBackground;
+      select{
+        width: 600px;
+        border: none;
+        outline: none;
+        height: 39px;
+        border-radius: 30px;
+        background-color: $BaseBackground;
+        text-align: center;
       }
 
     }
