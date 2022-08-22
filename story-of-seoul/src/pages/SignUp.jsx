@@ -28,15 +28,15 @@ const SignUp = () => {
                         <button>인증번호 확인</button>
                     </div>
                     <div className="NickNameAndRegionWrapper">
-                        <input id="nickname" type="text" placeholder='닉네임을 입력하세요'/>                        
+                        <input id="nickname" type="text" placeholder='닉네임을 입력하세요'/>
                         <div class="dropdown">
-                        <button class="dropbtn">거주중인 지역구를 선택하세요.</button>
-                        <div class="dropdown-content">
-                            {seoulRegion.map(region => (
-                                <div id="region">{region}</div>
-                            ))}
+                            <button class="dropbtn">거주중인 지역구를 선택하세요.</button>
+                            <div class="dropdown-content">
+                                {seoulRegion.map(region => (
+                                    <div id="region">{region}</div>
+                                ))}
+                            </div>
                         </div>
-                    </div>
                     </div>
                     <input type="text" placeholder='비밀번호를 입력하세요'/>
                     <div class="dropdown">
