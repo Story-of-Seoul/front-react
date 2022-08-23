@@ -93,7 +93,7 @@ const SignUp = () => {
      *  서버로 부터 전달 받은 authNumber authNumberResponse state에 저장
      **/
     const onAuthNumberRequestClick = () => {
-        authAPI.requestAuthNumber(emailConfirm, (data) => {
+        authAPI.requestEmailAuthNumber(emailConfirm, (data) => {
             console.log('callback -- onAuthNumberRequestClick data = ' + data['authNumber']);
             setAuthNumberResponse(data['authNumber']);
             console.log('authNumber: ' + authNumberResponse);
