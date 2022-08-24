@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import '../styles/Nav.scss';
-import banner from '../images/banner.png';
+import banner from '../images/Banner_nav.png';
 import { useNavigate } from 'react-router-dom';
 
 const Nav = () => {
