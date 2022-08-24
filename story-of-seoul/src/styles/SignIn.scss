@@ -89,13 +89,39 @@
                 }
             }
             
+            .SignInButtonWrapper{
+                width: 800px;
+                align-items: center;
+                text-align: center;
+                margin-top: 20px;
+
+                button{
+                    width: 60%;
+                    margin-left: 5px;
+                    background-color: rgb(253, 222, 227);
+                }
+
+                button:hover{
+                    color: white;
+                    background-color: rgb(255, 195, 205);
+                }
+            }
+
+            #signup{
+
+                font-size: 15px;
+                margin-bottom: 20px;
+                margin-top: 50px;
+                text-align: center;
+                margin-top: 80px;
+                white-space: nowrap;
+            }
 
             .SignUpWrapper{
                 width: 800px;
                 align-items: center;
                 text-align: center;
-                margin-top: 50px;
-
+        
                 button{
                     width: 60%;
                     margin-left: 5px;
