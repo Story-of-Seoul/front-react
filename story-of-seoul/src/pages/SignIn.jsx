@@ -20,6 +20,14 @@ const SignIn = () => {
                         <input type="text" placeholder='비밀번호를 입력하세요'/>
                     </div>
 
+                    <div className='SignInButtonWrapper'>
+                        <button>로그인</button>
+                    </div>
+
+                    <div id ='signup'>
+                    아직 아이디가 없다면 회원가입 버튼을 눌러주세요
+                    </div>
+                    
                     <div className='SignUpWrapper'>
                         <button>회원가입</button>
                     </div>
