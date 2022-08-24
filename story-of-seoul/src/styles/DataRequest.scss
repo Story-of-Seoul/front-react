@@ -57,6 +57,7 @@
             }
 
             .TableWrapper{
+          
                 table {
                     margin-bottom: 30px;
                     table-layout: fixed;
@@ -90,7 +91,7 @@
                   }
                
                 button{
-                    margin-top: 30px;
+                    margin-top: 20px;
                     border: none;
                     outline: none;
                     height: 39px;
@@ -101,17 +102,21 @@
                     width: 200px;
                     float: right;
                     clear: both;
+                    display: inline-block; 
                 }
 
                 button:hover{
                     background-color: #FFD24C;
                 }
+ 
             }
 
             
             .ButtonWrapper{
+             
                 margin-top: 30px;
                 .PreviousButtonWrapper{
+                    
                     button{
                         border: none;
                         outline: none;
@@ -144,7 +149,7 @@
                         display: inline-block; 
                         margin: 0 5px;  
                         float: right;
-                        clear: both;
+                        // clear: both;
                     }
                     button:hover{
                         background-color: #92B4EC;

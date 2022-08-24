@@ -7,7 +7,7 @@
     position: relative;
     width: 1800px;
     
-    height: 574px;
+    height: 450px;
 
     margin-top: 60px;
     
@@ -22,14 +22,14 @@
     .InfoText {
         width: 40%;
         min-width: 550px;
-        
+        line-height: 50px;
         text-align: center;
         margin-left: 200px;
         font-size: 22px;
     }
 
     img {
-        width: 45%;
+        width: 35%;
         height: auto;
     }
 }
