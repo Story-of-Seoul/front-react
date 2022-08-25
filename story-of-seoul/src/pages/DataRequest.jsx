@@ -51,7 +51,10 @@ const DataRequest = () => {
                             </tbody>
                         </table>
 
-                        <button>글 작성</button>                      
+                                              
+                    </div>
+                    <div className='WriteButtonWrapper'>
+                        <button>글작성</button>
                     </div>
                     <div className='ButtonWrapper'>
                         <div className='PreviousButtonWrapper'>

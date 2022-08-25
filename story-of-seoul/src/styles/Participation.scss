@@ -1,7 +1,7 @@
 @import './utils.scss';
 
-.DataRequest{
-    .DataRequestWrapper{
+.Participation{
+    .ParticipationWrapper{
         #title{
             font-size: 33px;
             margin-bottom: 20px;
@@ -10,7 +10,6 @@
 
         .Contents{
             margin-top: 90px;
-            
             .SearchButtonWrapper{
                 display: flex;
                 // flex-direction: column;
@@ -33,7 +32,7 @@
                     outline: none;    
                     height: 39px;
                     border-radius: 30px;
-                    background-color: $BaseBackground;
+                    background-color: #DAE8F6;
                     text-align: center;
                     width: 500px;
                 }
@@ -56,8 +55,7 @@
                 }
             }
 
-            .TableWrapper{
-          
+            .ListWrapper{
                 table {
                     margin-bottom: 30px;
                     table-layout: fixed;
@@ -66,14 +64,7 @@
                     border-collapse: collapse;
                     font-size: 20px;
                   }
-                  thead{
-                    background-color:#F8F3E1;
-                  }
-
-                  tbody tr:hover{
-                    background: #f8eec9;
-                  }
-
+               
                   th, td {
                     position: sticky;
                     text-align: center;
@@ -82,22 +73,35 @@
                     padding: 10px;
                   }
 
+                  thead{
+                    background-color: #DAE8F6;
+                  }
+                  tbody tr:hover{
+                    // background: #92B4EC;
+                    // background: #F8F3E1;
+                    // background: #B3B3B3;
+                    background: #b8cbeb;
+    
+                  }
                   .No{
                     width:40px;
                   }
-                
+
+
+
                   .Date{
                     width: 150px;
                   }
 
-                  .State{
-                    width: 80px;;
+                  .Like{
+                    width: 90px;;
                   }
 
                   th:first-child, td:first-child {
                     border-left: none;
                   }
- 
+               
+                
             }
 
             .WriteButtonWrapper{
@@ -123,7 +127,6 @@
                     background-color: #FFD24C;
                 }
             }
-
             .ButtonWrapper{
              
                 margin-top: 30px;
@@ -170,7 +173,6 @@
                     }
                 }
             }
-            
         }
     }
 }
