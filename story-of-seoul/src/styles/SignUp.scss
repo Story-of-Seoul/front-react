@@ -147,10 +147,17 @@
 
       .dropdown:hover .dropdown-content {
         display: block;
+
       }
 
-      .dropdown:hover .dropbtn {
-        background-color: $PointBackground;
+      select{
+        width: 600px;
+        border: none;
+        outline: none;
+        height: 39px;
+        border-radius: 30px;
+        background-color: $BaseBackground;
+        text-align: center;
       }
 
     }

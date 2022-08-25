@@ -3,11 +3,11 @@ import React, { useEffect, useState } from 'react';
 import '../styles/Nav.scss';
 import banner from '../images/Banner_nav.png';
 import { useNavigate } from 'react-router-dom';
+import {useSelector} from "react-redux";
 
 const Nav = () => {
 
-    const [isLogin, setIsLogin] = useState(true);
-
+    const isLogin = useSelector(state => state.auth.isLogin);
     let navigate = useNavigate();
     
     const onClickMyPage = () => {
