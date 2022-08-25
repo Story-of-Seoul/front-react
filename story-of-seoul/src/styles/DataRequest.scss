@@ -28,7 +28,7 @@
                 line-height: 60px;
 
                 input{
-                    font-size: 18px;
+                    font-size: 20px;
                     border: none;
                     outline: none;    
                     height: 39px;
@@ -39,7 +39,7 @@
                 }
 
                 button{
-
+                    font-size: 20px;
                     border: none;
                     outline: none;
                     height: 39px;
@@ -64,8 +64,16 @@
                     width: 1200px;
                     border-top: 1px solid #B3B3B3;
                     border-collapse: collapse;
+                    font-size: 20px;
                   }
-               
+                  thead{
+                    background-color:#F8F3E1;
+                  }
+
+                  tbody tr:hover{
+                    background: #f8eec9;
+                  }
+
                   th, td {
                     position: sticky;
                     text-align: center;
@@ -89,9 +97,15 @@
                   th:first-child, td:first-child {
                     border-left: none;
                   }
-               
+ 
+            }
+
+            .WriteButtonWrapper{
+                
                 button{
+                    font-size: 20px;
                     margin-top: 20px;
+                    margin-bottom: 20px;
                     border: none;
                     outline: none;
                     height: 39px;
@@ -108,16 +122,15 @@
                 button:hover{
                     background-color: #FFD24C;
                 }
- 
             }
 
-            
             .ButtonWrapper{
              
                 margin-top: 30px;
                 .PreviousButtonWrapper{
                     
                     button{
+                        font-size: 20px;
                         border: none;
                         outline: none;
                         height: 39px;
@@ -138,6 +151,7 @@
     
                 .NextButtonWrapper{
                     button{
+                        font-size: 20px;
                         border: none;
                         outline: none;
                         height: 39px;

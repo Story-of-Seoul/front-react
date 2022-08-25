@@ -15,8 +15,8 @@
         
         #title{
             font-size: 33px;
-            margin-bottom: 20px;
-            margin-top: 50px;
+            margin-bottom: 30px;
+            margin-top: 60px;
         }
         
         img{
@@ -38,30 +38,32 @@
             input{
                 border: none;
                 outline: none;    
-                height: 39px;
+                height: 45px;
                 border-radius: 30px;
                 background-color: $BaseBackground;
                 text-align: center;
+                font-size: 20px;
             }
 
             button{
                 border: none;
                 outline: none;
-                height: 39px;
+                height: 45px;
                 border-radius: 30px;
                 cursor: pointer;
+                font-size: 20px;
                 
             }
    
             
             
             .EmailRequestWrapper{
-
+                font-size: 20px;
                 width: 800px;
                 align-items: center;
                 text-align: center;
                 margin-top: 20px;
-
+                
                 input {
                     width: 60%;
                 }

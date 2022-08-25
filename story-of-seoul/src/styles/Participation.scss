@@ -1,5 +1,182 @@
 @import './utils.scss';
 
+
+.Participation{
+    .ParticipationWrapper{
+        #title{
+            font-size: 33px;
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+
+        .Contents{
+            margin-top: 90px;
+            .SearchButtonWrapper{
+                display: flex;
+                // flex-direction: column;
+                text-align: center;
+                width: 700px;
+                margin: 0 auto;
+                align-items: center;
+                justify-content: center;
+
+                border: 6px solid #DAE8F6;
+                border-radius: 30px;
+
+                height: 60px;
+                margin-bottom: 80px;
+                line-height: 60px;
+
+                input{
+                    font-size: 20px;
+                    border: none;
+                    outline: none;    
+                    height: 39px;
+                    border-radius: 30px;
+                    background-color: #DAE8F6;
+                    text-align: center;
+                    width: 500px;
+                }
+
+                button{
+                    font-size: 20px;
+                    border: none;
+                    outline: none;
+                    height: 39px;
+                    border-radius: 30px;
+                    cursor: pointer;
+                    text-align: center;
+                    background-color: #DAE8F6;
+                    width: 100px;
+                    float: right;
+
+                }
+                button:hover{
+                    background-color: #92B4EC;
+                }
+            }
+
+            .ListWrapper{
+                table {
+                    margin-bottom: 30px;
+                    table-layout: fixed;
+                    width: 1200px;
+                    border-top: 1px solid #B3B3B3;
+                    border-collapse: collapse;
+                    font-size: 20px;
+                  }
+               
+                  th, td {
+                    position: sticky;
+                    text-align: center;
+                    border-bottom: 1px solid #B3B3B3;
+                    border-left: 1px solid #B3B3B3;
+                    padding: 10px;
+                  }
+
+                  thead{
+                    background-color: #DAE8F6;
+                  }
+                  tbody tr:hover{
+                    // background: #92B4EC;
+                    // background: #F8F3E1;
+                    // background: #B3B3B3;
+                    background: #b8cbeb;
+    
+                  }
+                  .No{
+                    width:40px;
+                  }
+
+
+
+                  .Date{
+                    width: 150px;
+                  }
+
+                  .Like{
+                    width: 90px;;
+                  }
+
+                  th:first-child, td:first-child {
+                    border-left: none;
+                  }
+               
+                
+            }
+
+            .WriteButtonWrapper{
+                
+                button{
+                    font-size: 20px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    border: none;
+                    outline: none;
+                    height: 39px;
+                    border-radius: 30px;
+                    cursor: pointer;
+                    text-align: center;
+                    background-color: #FFE69A;
+                    width: 200px;
+                    float: right;
+                    clear: both;
+                    display: inline-block; 
+                }
+
+                button:hover{
+                    background-color: #FFD24C;
+                }
+            }
+            .ButtonWrapper{
+             
+                margin-top: 30px;
+                .PreviousButtonWrapper{
+                    
+                    button{
+                        font-size: 20px;
+                        border: none;
+                        outline: none;
+                        height: 39px;
+                        border-radius: 30px;
+                        cursor: pointer;
+                        text-align: center;
+                        background-color: #DAE8F6;
+                        width: 100px;
+                        display: inline-block; 
+                        margin: 0 5px;  
+                        float: left;
+                        clear: both;
+                    }
+                    button:hover{
+                        background-color: #92B4EC;
+                    }
+                }
+    
+                .NextButtonWrapper{
+                    button{
+                        font-size: 20px;
+                        border: none;
+                        outline: none;
+                        height: 39px;
+                        border-radius: 30px;
+                        cursor: pointer;
+                        text-align: center;
+                        background-color: #DAE8F6;
+                        width: 100px;
+                        display: inline-block; 
+                        margin: 0 5px;  
+                        float: right;
+                        // clear: both;
+                    }
+                    button:hover{
+                        background-color: #92B4EC;
+                    }
+                }
+            }
+        }
+    }
+=======
 .Participation {
     
     border: 1px solid black;
@@ -80,5 +257,6 @@
             border: 1px solid black;
         }
     }
+
 
 }
