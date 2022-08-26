@@ -1,0 +1,87 @@
+@import './utils.scss';
+
+.Notice{
+    .NoticeWrapper{
+        #title{
+            font-size: 33px;
+            margin-bottom: 80px;
+            margin-top: 50px;
+        }
+
+        .TableWrapper{
+            table {
+                font-size: 20px;
+                margin-bottom: 30px;
+                table-layout: fixed;
+                width: 1200px;
+                border-top: 1px solid #B3B3B3;
+                border-collapse: collapse;
+              }
+           
+              th, td {
+                position: sticky;
+                text-align: center;
+                border-bottom: 1px solid #B3B3B3;
+                border-left: 1px solid #B3B3B3;
+                padding: 10px;
+              }
+
+              .No{
+                width:40px;
+              }
+            
+              .Date{
+                width: 150px;
+              }
+
+              th:first-child, td:first-child {
+                border-left: none;
+              }
+        }
+
+        .ButtonWrapper{
+            margin-top: 30px;
+            .PreviousButtonWrapper{
+                button{
+                    font-size: 20px;
+                    border: none;
+                    outline: none;
+                    height: 39px;
+                    border-radius: 30px;
+                    cursor: pointer;
+                    text-align: center;
+                    background-color: #DAE8F6;
+                    width: 100px;
+                    display: inline-block; 
+                    margin: 0 5px;  
+                    float: left;
+                    clear: both;
+                }
+                button:hover{
+                    background-color: #92B4EC;
+                }
+            }
+
+            .NextButtonWrapper{
+                button{
+                    font-size: 20px;
+                    border: none;
+                    outline: none;
+                    height: 39px;
+                    border-radius: 30px;
+                    cursor: pointer;
+                    text-align: center;
+                    background-color: #DAE8F6;
+                    width: 100px;
+                    display: inline-block; 
+                    margin: 0 5px;  
+                    float: right;
+             
+                }
+                button:hover{
+                    background-color: #92B4EC;
+                }
+            }
+        }
+    }
+}

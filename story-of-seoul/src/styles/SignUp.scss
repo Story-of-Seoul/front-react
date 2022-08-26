@@ -17,7 +17,7 @@
 
     #title {
       font-size: 33px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     .Contents {
@@ -38,6 +38,7 @@
         border-radius: 30px;
         background-color: $BaseBackground;
         text-align: center;
+        font-size: 20px;
       }
 
       button {
@@ -46,6 +47,7 @@
         height: 39px;
         border-radius: 30px;
         cursor: pointer;
+        font-size: 20px;
 
       }
 
@@ -53,7 +55,7 @@
         display: flex;
         flex-direction: row;
         width: 100%;
-
+        font-size: 20px;
         input {
           width: 60%;
         }
@@ -69,7 +71,7 @@
         display: flex;
         flex-direction: row;
         width: 100%;
-
+        font-size: 20px;
         input {
           width: 60%;
         }
@@ -86,11 +88,66 @@
         display: flex;
         flex-direction: row;
         width: 100%;
-
+        font-size: 20px;
         #nickname {
           width: 300px;
           margin-right: 10px;
         }
+
+        .dropdown {
+
+          button {
+            width: 400px;
+          }
+        }
+      }
+
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        text-align: center;
+  
+    
+        .dropbtn {
+
+          background-color: $BaseBackground;
+          color: #a9a9a9;
+          line-height: 37px;
+        }
+
+        .dropdown-content {
+          display: none;
+          height: 200px;
+          overflow-y: scroll;
+          
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+
+          .dropdown-content div {
+            color: black;
+            cursor: pointer;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            align-items: center;
+          }
+
+
+        }
+      }
+
+      .dropdown-content div:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+
       }
 
       select{
@@ -110,6 +167,7 @@
     }
 
     button {
+      font-size: 20px;
       width: 600px;
       height: 50px;
       border: none;
@@ -117,6 +175,11 @@
       outline: none;
       background-color: $PointBackground;
       cursor: pointer;
+    }
+
+    button:hover{
+      color: white;
+      background-color: rgb(87, 108, 146);
     }
   }
 

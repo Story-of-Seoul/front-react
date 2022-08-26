@@ -14,8 +14,9 @@
         top: $NavHeight;
         right: 0;
         
-        width: 160px;
-        height: fit-content;
+        width: 180px;
+        // height: fit-content;
+
         margin-top: 10px;
         margin-right: 30px;
         
@@ -28,10 +29,16 @@
 
         .SignInButton {
             margin-right: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            height: 25px;
         }
 
         .SignUpButton {
             margin-left: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            height: 25px;
         }
     }
 
@@ -44,7 +51,7 @@
         margin-right: 1600px;
         white-space: nowrap;
         margin-top: 40px;
-        font-size: 24px;
+        font-size: 30px;
 
         border-bottom: 4px solid $PointBackground;
         
@@ -62,7 +69,7 @@
         
 
         .AnalysisWrapper {
-
+       
             display: flex;
             justify-content: space-between;
             
@@ -111,16 +118,16 @@
                     z-index: 2;
                     width: 100%;
                     height: 40px;
+                    font-size: 20px;
                     
                     background-color: #FFFFFF;
                     border: none;
                     border-radius: 20px;
                     outline: none;
                     
-                    
                     margin-top: 30px;
                     text-align: left;
-
+                    font-size: 18px;
                     
                 }
 
@@ -128,14 +135,16 @@
                     z-index: 2;
                     border: none;
                     outline: none;
-
+                    font-size: 20px;
                     background-color: #92B4EC;
                     position: absolute;
                     border-radius: 30px;
                     width: 36px;
                     height: 36px;
-                    top: 33px;
-                    right: 10px;
+                    // top: 33px;
+                    // right: 10px;
+                    ////////////////
+                    
                 }
             }
 
@@ -144,7 +153,7 @@
                 
                 width: $SearchContentsWidth;
                 height: $SearchResultContainerHeight;
-
+                font-size: 20px;
                 margin-top: 30px;
 
                 border-radius: 20px;
@@ -171,7 +180,7 @@
                     height: 40px;
                     line-height: 40px;
                     text-align: center;
-                    
+                    font-size: 20px;
                     border-radius: 30px;
                     background-color: #FFE69A;
                 }
@@ -197,7 +206,7 @@
             min-width: 700px;
             width: 50%;
             #title {
-                font-size: 20px;
+                font-size: 30px;
                 border-bottom: 3px solid #92B4EC;
             }
 
@@ -210,6 +219,7 @@
                 border-bottom: 2px solid rgba($color: #92B4EC, $alpha: 0.4);
                 line-height: 35px;
                 padding-left: 10px;
+                font-size: 20px;
             }
         }
 
@@ -219,7 +229,7 @@
             width: 50%;
             margin-left: 60px;
             #title {
-                font-size: 20px;
+                font-size: 30px;
                 border-bottom: 3px solid #92B4EC;
             }
 
@@ -232,6 +242,7 @@
                 border-bottom: 2px solid rgba($color: #92B4EC, $alpha: 0.4);
                 line-height: 35px;
                 padding-left: 10px;
+                font-size: 20px;
             }
         }
         

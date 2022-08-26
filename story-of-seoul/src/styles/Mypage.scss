@@ -1,0 +1,109 @@
+@import './utils.scss';
+
+.Mypage{
+    .MypageWrapper{
+        display: inline-block;
+  
+        
+        #title{
+            font-size: 33px;
+            margin-bottom: 80px;
+            margin-top: 50px;
+        }
+
+        .Contents{
+            display: inline-block;
+            margin: 10px;
+            width: 300px;
+            height: 400px;
+            .Info{
+         
+                dl{
+                    background: #DAE8F6;
+                    border-radius: 30px;
+                    padding:40px 20px 40px 20px;
+                }
+                dt{
+                    font-size: 24px;
+                    margin: 10px;
+                }
+                dd{
+                    margin-bottom: 20px;
+                }
+               
+            }
+
+            .WriteList{
+                ul{
+                    background: #F8F3E1;
+                    border-radius: 30px;
+                    list-style-type: none;
+                    padding: 10px;
+                    margin:10px
+                }
+                li{
+                   #title{
+                        margin-top: 10px;
+                        font-size: 24px;
+                    }
+                    #contents{
+                        font-size: 20px;
+                        
+                    }
+                    button{
+
+                        margin-top: 10px;
+                        font-size: 12px;
+                        border: none;
+                        outline: none;
+
+                        border-radius: 30px;
+                      cursor: pointer;
+                        text-align: center;
+                        background-color: 0;
+                        width: 100px;
+                        display: inline-block; 
+
+                        float: right;
+                    }
+                }
+            }
+
+            .CommentList{
+                ul{
+                    background: #F8F3E1;
+                    border-radius: 30px;
+                    list-style-type: none;
+                    padding: 10px;
+                    margin:10px
+                }
+                li{
+                   #title{
+                        margin-top: 10px;
+                        font-size: 24px;
+                    }
+                    #contents{
+                        font-size: 20px;
+                        
+                    }
+                    button{
+                        margin-top: 10px;
+                        font-size: 12px;
+                        border: none;
+                        outline: none;
+
+                        border-radius: 30px;
+                      cursor: pointer;
+                        text-align: center;
+                        background-color: 0;
+                        width: 100px;
+                        display: inline-block; 
+
+                        float: right;
+                    }
+                }
+            }
+
+        }
+    }
+}

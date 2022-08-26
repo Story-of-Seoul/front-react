@@ -5,7 +5,7 @@ import React from 'react';
 const Board = () => {
     return (
         <div className="Board">
-            대충 게시글 제목
+            공지사항 게시글 제목입니다.
         </div>
     );
 };

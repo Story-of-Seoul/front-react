@@ -2,7 +2,7 @@
 @import './utils.scss';
 
 .Nav {
-
+    
     width: 100vw;
     min-width: 1000px;
     overflow: hidden;
@@ -20,9 +20,9 @@
     .ImgaeWrapper {
         height: inherit;
         margin-left: 40px;
-        
+        cursor: pointer;
         img {
-            width: 100px;
+            width: 190px;
         }
     }
 
@@ -30,7 +30,7 @@
         
         width: $PageSelectorWrapperWidth;
         height: inherit;
-
+        font-size: 24px;
         display: flex;
         justify-content: space-around;
         flex-direction: row;
@@ -40,15 +40,19 @@
 
         #notice {
             margin-right: $PageSelectorMargin;
+            cursor: pointer;
         }
         #analysis {
             margin-right: $PageSelectorMargin;
+            cursor: pointer;
         }
         #citizen-participation{
             margin-right: $PageSelectorMargin;
+            cursor: pointer;
         }
         #data-request {
             margin-right: $PageSelectorMargin;
+            cursor: pointer;
         }
         
     }
