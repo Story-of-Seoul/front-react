@@ -1,11 +1,19 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import ApexCharts from "apexcharts";
 import analysisAPI from "../axios/analysisAxios";
 
 const Disabled = (props) => {
 
+    const [newsTotal, setNewsTotal] = useState();
+    const [policyTotal, setPolicyTotal] = useState();
 
     useEffect(() => {
+
+        analysisAPI.requestNewsPolicyTotal('disablecalltaxi', (data) => {
+            setNewsTotal(data['news']);
+            setPolicyTotal(data['policy']);
+        })
+
         analysisAPI.requestDisabledData((data) => {
 
             /** 7월 이용일시 → 일별(1일 간격), 요일별, 하루당 시간별 이용비율  **/
@@ -68,8 +76,8 @@ const Disabled = (props) => {
 
             </div>
             <div className='EtcWrapper'>
-                <div id='news'>관련 뉴스<span>{5}</span></div>
-                <div id='policy'>관련 정책<span>{2}</span></div>
+                <div id='news'>관련 뉴스<span>{newsTotal}</span></div>
+                <div id='policy'>관련 정책<span>{policyTotal}</span></div>
             </div>
         </div>
     );

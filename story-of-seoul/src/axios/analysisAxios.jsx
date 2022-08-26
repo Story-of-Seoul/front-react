@@ -58,6 +58,41 @@ const analysisAPI = {
         }).catch((e) => console.log(e));
     },
 
+    requestNewsPolicyTotal: (type, callback) => {
+        console.log('calling requestSafetyData from API');
+        axios(
+            {
+                url: 'news/newspolicytotal',
+                params: {
+                    type: type
+                },
+                method: 'get',
+                baseURL: 'http://' + 'localhost' + ':8000',
+            }
+        ).then(response => {
+            console.log("response data: " + response.data);
+            callback(response.data);
+        }).catch((e) => console.log(e));
+    },
+
+    requestNewsPolicy: (type, callback) => {
+        console.log('calling requestSafetyData from API');
+        axios(
+            {
+                url: 'news/newspolicy',
+                params: {
+                    type: type
+                },
+                method: 'get',
+                baseURL: 'http://' + 'localhost' + ':8000',
+            }
+        ).then(response => {
+            console.log("response data: " + response.data);
+            callback(response.data);
+        }).catch((e) => console.log(e));
+    },
+
+
 
 };
 

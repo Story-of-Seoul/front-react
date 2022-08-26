@@ -1,10 +1,45 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import '../styles/DataRequest.scss';
+import boardAPI from "../axios/boardAxios";
+import {useNavigate} from "react-router-dom";
+
 const DataRequest = () => {
+
+
+    const [boards, setBoards] = useState([]);
+    let navigate = useNavigate();
+    const [isLogin,setIsLogin] = useState(false);
+    const [token,setToken] = useState("");
+
+
+    useEffect(() => {
+
+        const storedToken = JSON.parse(window.localStorage.getItem('token'));
+        if (storedToken != null) {
+            setIsLogin(true);
+            setToken(storedToken);
+        }
+
+        boardAPI.requestBoardByType('dataRequest', (data) => {
+            setBoards(data['results']);
+        });
+    }, []);
+
+
+    const onClcik = () => {
+        if(isLogin){
+            navigate('/dataRequestWrite')
+        } else {
+            alert('로그인을 해야합니다.');
+            navigate('/signin');
+        }
+    }
+
+
     return (
         <div className='DataRequest'>
             <div className='DataRequestWrapper'>
-                <div id = 'title'>
+                <div id='title'>
                     데이터 요청
                 </div>
                 <div className='Contents'>
@@ -16,56 +51,41 @@ const DataRequest = () => {
                     <div className='TableWrapper'>
                         <table>
                             <thead>
-                                <tr>
-                                    <th className='No'>번호</th>
-                                    <th className='Title'>제목</th>
-                                    <th className='Date'>작성일</th>
-                                    <th className='State'>현황</th>
-                                </tr>
+                            <tr>
+                                <th className='No'>번호</th>
+                                <th className='Title'>제목</th>
+                                <th className='Date'>작성일</th>
+                                <th className='State'>현황</th>
+                            </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                <td>1</td><td>데이터 요청글 제목</td><td>2022.08.20</td><td>처리중</td>
-                                </tr>
-                                <tr>
-                                <td>2</td><td>데이터 요청글 제목2</td><td>2022.08.24</td><td>완료</td>
-                                </tr>
-                                <tr>
-                                <td>3</td><td></td><td></td><td></td>
-                                </tr>
-                                <tr>
-                                <td>4</td><td></td><td></td><td></td>
-                                </tr>
-                                <tr>
-                                <td>5</td><td></td><td></td><td></td>
-                                </tr>
-                                <tr>
-                                <td>6</td><td></td><td></td><td></td>
-                                </tr>
-                                <tr>
-                                <td>7</td><td></td><td></td><td></td>
-                                </tr>
-                                <tr>
-                                <td>8</td><td></td><td></td><td></td>
-                                </tr>
-                            </tbody>
+                            {boards ? boards.map((item, index) => {
+                                return (
+                                    <tbody>
+                                    <tr>
+                                        <td>{index+1}</td>
+                                        <td>{item.title}</td>
+                                        <td>{new String(item.created_at).split('T')[0]}</td>
+                                        <td>{item.processing_status}</td>
+                                    </tr>
+                                    </tbody>
+                                )
+                            }) : '없음'}
                         </table>
 
-                                              
                     </div>
                     <div className='WriteButtonWrapper'>
-                        <button>글작성</button>
+                        <button onClick={onClcik}>글작성</button>
                     </div>
                     <div className='ButtonWrapper'>
                         <div className='PreviousButtonWrapper'>
                             <button>이전</button>
                         </div>
-                    
+
                         <div className='NextButtonWrapper'>
                             <button>다음</button>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

@@ -13,7 +13,18 @@ const SafetyAnalysisDetailPage = () => {
     const [earthquake, setEarthQuake] = useState();
     const [isBoardWriteClicked, setIsBoardWriteClicked] = useState(false);
 
+    const [news, setNews] = useState([]);
+    const [policies, setPolicies] = useState([]);
     useEffect(() => {
+
+        analysisAPI.requestNewsPolicy('safe', (data) => {
+
+            const newsData = data['news'];
+            const policyData = data['policy'];
+            setNews(newsData);
+            setPolicies(policyData);
+
+        });
 
         analysisAPI.requestSafetyData((data) => {
             /** 지진 횟수 **/
@@ -54,17 +65,31 @@ const SafetyAnalysisDetailPage = () => {
                 <div className='NewsAndPolicyWrapper'>
                     <div className='PolicyWrapper'>
                         <div id='title'>관련정책</div>
-                        <div id='contents'></div>
-                        <div id='contents'></div>
+                        {policies ? policies.map((item, index) => {
+                            return (
+                                <div key={index} className='Contents'>
+                                    <div id='policy_title'>{item.title}</div>
+                                    <div id='policy_content'>{item.content}</div>
+                                    <a id='policy_link' href={item.url}>링크</a>
+                                </div>
+                            )
+                        }) : ''}
                     </div>
 
                     <div className='NewsWrapper'>
                         <div id='title'>관련뉴스</div>
-                        <div id='contents'></div>
-                        <div id='contents'></div>
+                        {news ? news.map((item, index) => {
+                            return (
+                                <div key={index} className='Contents'>
+                                    <div id='news_title'>{item.title}</div>
+                                    <div id='news_content'>{item.content}</div>
+                                    <a id='news_link' href={item.url}>링크</a>
+                                </div>
+                            )
+                        }) : ''}
                     </div>
                     {isBoardWriteClicked === false ?
-                    <button onClick={() => setIsBoardWriteClicked(true)}>게시글 작성</button> : null}
+                        <button onClick={() => setIsBoardWriteClicked(true)}>게시글 작성</button> : null}
                 </div>
 
             </div>
