@@ -68,9 +68,12 @@ const Home = () => {
                     <SearchInsert/>
                     <SearchResultContainer/>
                     <div className="KeywordWrapper">
-                        {keywords.map(keyword => (
-                            <div className='Keyword'>#{keyword}</div>
-                        ))}
+                        <button>#환경</button>
+                        <button>#문화생활</button>
+                        <button>#복지</button>
+                        <button>#안전</button>
+                        <button>#교통</button>
+                        <button>#주정차</button>
                     </div>
                 </div>
             </div>

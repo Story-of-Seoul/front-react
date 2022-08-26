@@ -146,8 +146,11 @@
                     height: 40px;
                     top: 40px;
                     right: -5px;
-
-                    
+                }
+                button:hover{
+                    background-color: #516a93;
+                    color: white;
+                    cursor: pointer;
                 }
             }
 
@@ -177,16 +180,23 @@
                 align-content: space-around;
                 flex-wrap: wrap;
 
-                .Keyword {
+                button {
                     
                     width: 120px;
                     height: 40px;
                     line-height: 40px;
                     text-align: center;
                     font-size: 20px;
+                    border: none;
                     border-radius: 30px;
                     background-color: #FFE69A;
                 }
+
+                button:hover{
+                    background-color: #FFD24C;
+                    cursor: pointer;
+                }
+
             }
         }
     }
