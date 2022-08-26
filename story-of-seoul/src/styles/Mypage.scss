@@ -21,7 +21,7 @@
     height: 700px;
 
     .MyInfoWrapper {
-
+   
       width: 600px;
       height: inherit;
       display: flex;
@@ -34,7 +34,7 @@
       }
 
       .MyInfoContents {
-
+        
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -42,6 +42,38 @@
         height: inherit;
         background: $PointBackground;
         border-radius: 20px;
+
+        .NickNameWrapper{
+          margin-left: 40px;
+          #nickname_title{
+            font-size: 24px;
+          }
+          #nickname_text{
+            font-size: 20px;
+          }
+      
+
+        }
+
+        .EmailWrapper{
+          margin-left: 40px;
+          #Email_title{
+            font-size: 24px;
+          }
+          #Email_text{
+            font-size: 20px;
+          }
+        }
+
+        .CountyWrapper{
+          margin-left: 40px;
+          #county_title{
+            font-size: 24px;
+          }
+          #conuty_text{
+            font-size: 20px;
+          }
+        }
       }
 
     }
@@ -67,6 +99,12 @@
 
           border-radius: 20px;
           height: 270px;
+          .dummy{
+
+            .TextWrapper{
+              margin: 20px;
+            }
+          }
         }
       }
 
@@ -99,14 +137,10 @@
         display: flex;
         justify-content: space-between;
 
-        .ButtonWrapper {
-          button{
-            outline: none;
-            border: none;
-            color: rgba(#B3B3B3, 0.8);
-            margin: 5px;
-          }
+        .TextWrapper{
+          margin:20px;
         }
+
 
       }
     }
