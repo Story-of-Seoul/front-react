@@ -467,7 +467,12 @@ const EnvironmentAnalysisDetailPage = () => {
                         </div>
                     </div>
                     <div className='Contents'>
-                        여기에 분석 내용
+                        <div className='AnalyContents'>1번</div>
+                        <div className='AnalyContents'>2번</div>
+                        <div className='AnalyContents'>3번</div>
+                        <div className='AnalyContents'>4번</div>
+                        <div className='AnalyContents'>5번</div>
+                        <div className='AnalyContents'>6번</div>
                     </div>
                 </div>
                 <div className='NewsAndPolicyWrapper'>
