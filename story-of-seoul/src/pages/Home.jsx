@@ -190,12 +190,7 @@ const Home = () => {
                 </div>
 
                 </div>
-                <div className="HotBoardWrapper">
-                    <div id="title">
-                        인기글
-                    </div>
 
-                </div>
             </div>
 
         </div>
