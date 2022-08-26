@@ -1,0 +1,33 @@
+
+.DataRequestWrite {
+  width: 1600px;
+  border: 1px solid black;
+
+  font-size: 24px;
+  #data_request_title{
+    height: 100px;
+  }
+
+  .DataRequestContentsWrapper{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    height: 800px;
+    border: 1px solid black;
+
+    .TitleWrapper {
+      display: flex;
+      flex-direction: row;
+      width: 300px;
+      border: 1px solid black;
+    }
+    .EtcWrapper {
+      display: flex;
+      flex-direction: row;
+    }
+    .RequestContentsWrapper {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

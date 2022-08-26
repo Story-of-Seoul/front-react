@@ -116,7 +116,9 @@
               }
               #board_contents {
                 font-size: 20px;
-                // border: 1px solid black;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
            
               }
             }

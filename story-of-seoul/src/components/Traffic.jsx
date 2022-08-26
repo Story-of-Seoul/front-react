@@ -1,10 +1,17 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import ApexCharts from "apexcharts";
 import analysisAPI from "../axios/analysisAxios";
 
 const Traffic = (props) => {
 
+    const [newsTotal, setNewsTotal] = useState();
+    const [policyTotal, setPolicyTotal] = useState();
+
     useEffect(() => {
+        analysisAPI.requestNewsPolicyTotal('accident', (data) => {
+            setNewsTotal(data['news']);
+            setPolicyTotal(data['policy']);
+        })
 
         analysisAPI.requestTrafficData((data) => {
             const occurrence = data['occurrence'];
@@ -90,8 +97,8 @@ const Traffic = (props) => {
             <div id='title'>교통관련 데이터</div>
             <div id='traffic_acc_chart'></div>
             <div className='EtcWrapper'>
-                <div id='news'>관련 뉴스<span>{2}</span></div>
-                <div id='policy'>관련 정책<span>{4}</span></div>
+                <div id='news'>관련 뉴스<span>{newsTotal}</span></div>
+                <div id='policy'>관련 정책<span>{policyTotal}</span></div>
             </div>
         </div>
     );
