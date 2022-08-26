@@ -1,0 +1,1012 @@
+/* 메인페이지 */
+
+position: relative;
+width: 2560px;
+height: 2663px;
+
+background: #FFFFFF;
+
+
+/* 메인페이지 */
+
+position: absolute;
+width: 2560px;
+height: 2663px;
+left: 0px;
+top: 0px;
+
+
+
+/* 1. 메인페이지 */
+
+position: absolute;
+width: 2560px;
+height: 2663px;
+left: 0px;
+top: 0px;
+
+
+
+/* 전체 틀 */
+
+position: absolute;
+width: 2560px;
+height: 2663px;
+left: 0px;
+top: 0px;
+
+
+
+/* 메인포맷 */
+
+position: absolute;
+width: 2560px;
+height: 2663px;
+left: 0px;
+top: 0px;
+
+
+
+/* Rectangle 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 2560px;
+height: 2663px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+
+/* Group 2 */
+
+position: absolute;
+width: 2560px;
+height: 138px;
+left: 0px;
+top: 0px;
+
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 2560px;
+height: 132px;
+left: 0px;
+top: 0px;
+
+background: #F8F3E1;
+border-radius: 0px 0px 40px 40px;
+
+
+/* 메뉴글씨 */
+
+position: absolute;
+width: 1295px;
+height: 44px;
+left: 1039px;
+top: 47px;
+
+
+
+/* 분석페이지 */
+
+position: absolute;
+width: 166px;
+height: 44px;
+left: 1280px;
+top: 47px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* 시민참여게시판 */
+
+position: absolute;
+width: 232px;
+height: 44px;
+left: 1554px;
+top: 47px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* 데이터요청 */
+
+position: absolute;
+width: 166px;
+height: 44px;
+left: 1894px;
+top: 47px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* 마이페이지 */
+
+position: absolute;
+width: 166px;
+height: 44px;
+left: 2168px;
+top: 47px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* 공지사항 */
+
+position: absolute;
+width: 133px;
+height: 44px;
+left: 1039px;
+top: 47px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* 그림4 1 */
+
+position: absolute;
+width: 221px;
+height: 138px;
+left: 90px;
+top: 0px;
+
+background: url(그림4.png);
+
+
+/* 베너 */
+
+position: absolute;
+width: 2432px;
+height: 574px;
+left: 64px;
+top: 226px;
+
+
+
+/* Rectangle 9 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 2432px;
+height: 574px;
+left: 64px;
+top: 226px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+
+/* 그림4 3 */
+
+position: absolute;
+width: 914px;
+height: 571px;
+left: 1575px;
+top: 229px;
+
+background: url(그림4.png);
+
+
+/* 서울의 이야기는 서울에서 함께하는 모두의 이야기를 담는 웹서비스입니다 다양한 분석 데이터, 관련 정책, 뉴스를 함께 보면서 여러분의 이야기를 적어주세요 작은 이야기들이 모여 세상을 바꿀 수 있습니다 */
+
+position: absolute;
+width: 1388px;
+height: 437px;
+left: 90px;
+top: 280px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Group 11 */
+
+position: absolute;
+width: 2414px;
+height: 852px;
+left: 64px;
+top: 878px;
+
+
+
+/* 인기데이터분석 */
+
+position: absolute;
+width: 1602px;
+height: 852px;
+left: 64px;
+top: 878px;
+
+
+
+/* Rectangle 10 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1602px;
+height: 754px;
+left: 64px;
+top: 976px;
+
+background: #FFFFFF;
+border: 5px solid #92B4EC;
+border-radius: 30px;
+
+
+/* 인기데이터분석 */
+
+position: absolute;
+width: 232px;
+height: 44px;
+left: 64px;
+top: 878px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Line 1 */
+
+position: absolute;
+width: 315px;
+height: 0px;
+left: 64px;
+top: 939px;
+
+border: 7px solid #92B4EC;
+
+
+/* image 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 823px;
+height: 618px;
+left: 760px;
+top: 1044px;
+
+background: url(image.png);
+border: 3px solid #F8F3E1;
+border-radius: 30px;
+
+
+/* 미세먼지 분석 데이터 */
+
+position: absolute;
+width: 409px;
+height: 116px;
+left: 64px;
+top: 985px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* 검색창&키워드 */
+
+position: absolute;
+width: 731px;
+height: 754px;
+left: 1747px;
+top: 976px;
+
+
+
+/* Rectangle 11 */
+
+position: absolute;
+width: 731px;
+height: 754px;
+left: 1747px;
+top: 976px;
+
+background: #DAE8F6;
+border-radius: 30px;
+
+
+/* 키워드 */
+
+position: absolute;
+width: 554px;
+height: 111px;
+left: 1836px;
+top: 1536px;
+
+
+
+/* Rectangle 14 */
+
+position: absolute;
+width: 163px;
+height: 43px;
+left: 1836px;
+top: 1536px;
+
+background: #FFE69A;
+border-radius: 60px;
+
+
+/* Rectangle 19 */
+
+position: absolute;
+width: 163px;
+height: 43px;
+left: 2227px;
+top: 1604px;
+
+background: #FFE69A;
+border-radius: 60px;
+
+
+/* Rectangle 18 */
+
+position: absolute;
+width: 163px;
+height: 43px;
+left: 2027px;
+top: 1604px;
+
+background: #FFE69A;
+border-radius: 60px;
+
+
+/* Rectangle 17 */
+
+position: absolute;
+width: 163px;
+height: 43px;
+left: 2227px;
+top: 1536px;
+
+background: #FFE69A;
+border-radius: 60px;
+
+
+/* Rectangle 16 */
+
+position: absolute;
+width: 163px;
+height: 43px;
+left: 2027px;
+top: 1536px;
+
+background: #FFE69A;
+border-radius: 60px;
+
+
+/* Rectangle 15 */
+
+position: absolute;
+width: 163px;
+height: 43px;
+left: 1836px;
+top: 1604px;
+
+background: #FFE69A;
+border-radius: 60px;
+
+
+/* #미세먼지 */
+
+position: absolute;
+width: 113px;
+height: 29px;
+left: 2052px;
+top: 1543px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #A0A0A0;
+
+
+
+/* #키워드 */
+
+position: absolute;
+width: 113px;
+height: 29px;
+left: 1858px;
+top: 1543px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #A0A0A0;
+
+
+
+/* #환경 */
+
+position: absolute;
+width: 113px;
+height: 29px;
+left: 2252px;
+top: 1543px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #A0A0A0;
+
+
+
+/* 검색어입력 */
+
+position: absolute;
+width: 623px;
+height: 443px;
+left: 1801px;
+top: 1017px;
+
+
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 623px;
+height: 443px;
+left: 1801px;
+top: 1017px;
+
+background: #FDFCE7;
+border-radius: 30px;
+
+
+/* Rectangle 13 */
+
+position: absolute;
+width: 623px;
+height: 81px;
+left: 1801px;
+top: 1017px;
+
+background: #FFFFFF;
+border-radius: 30px;
+
+
+/* 검색어를 입력하세요 */
+
+position: absolute;
+width: 206px;
+height: 29px;
+left: 1868px;
+top: 1043px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+
+/* 검색버튼 */
+
+position: absolute;
+width: 50px;
+height: 49px;
+left: 2344px;
+top: 1035px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+width: 50px;
+height: 49px;
+left: 2344px;
+top: 1035px;
+
+background: #92B4EC;
+
+
+/* 검색 */
+
+position: absolute;
+width: 45px;
+height: 29px;
+left: 2346px;
+top: 1043px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* 로그인, 회원가입 버튼 */
+
+position: absolute;
+width: 240px;
+height: 37px;
+left: 2256px;
+top: 152px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 240px;
+height: 37px;
+left: 2256px;
+top: 152px;
+
+background: #DAE8F6;
+border-radius: 30px;
+
+
+/* 로그인 / 회원가입 */
+
+position: absolute;
+width: 177px;
+height: 29px;
+left: 2287px;
+top: 156px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* 인기글 */
+
+position: absolute;
+width: 1170px;
+height: 468px;
+left: 1308px;
+top: 1899px;
+
+
+
+/* 인기글 */
+
+position: absolute;
+width: 100px;
+height: 44px;
+left: 1324px;
+top: 1899px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Line 19 */
+
+position: absolute;
+width: 1170px;
+height: 0px;
+left: 1308px;
+top: 1964px;
+
+border: 5px solid #92B4EC;
+
+
+/* Group 14 */
+
+position: absolute;
+width: 1088px;
+height: 303px;
+left: 1349px;
+top: 2064px;
+
+
+
+/* Line 20 */
+
+position: absolute;
+width: 1088px;
+height: 0px;
+left: 1349px;
+top: 2064px;
+
+border: 3px solid #DAE8F6;
+
+
+/* Line 21 */
+
+position: absolute;
+width: 1088px;
+height: 0px;
+left: 1349px;
+top: 2165px;
+
+border: 3px solid #DAE8F6;
+
+
+/* Line 22 */
+
+position: absolute;
+width: 1088px;
+height: 0px;
+left: 1349px;
+top: 2266px;
+
+border: 3px solid #DAE8F6;
+
+
+/* Line 23 */
+
+position: absolute;
+width: 1088px;
+height: 0px;
+left: 1349px;
+top: 2367px;
+
+border: 3px solid #DAE8F6;
+
+
+/* 인기글 제목입니다 */
+
+position: absolute;
+width: 736px;
+height: 64px;
+left: 1374px;
+top: 2084px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+
+/* 인기글 제목입니다 */
+
+position: absolute;
+width: 736px;
+height: 64px;
+left: 1374px;
+top: 2185px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+
+/* 인기글 제목입니다 */
+
+position: absolute;
+width: 736px;
+height: 64px;
+left: 1374px;
+top: 2286px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+
+/* 공지사항 */
+
+position: absolute;
+width: 1170px;
+height: 468px;
+left: 64px;
+top: 1899px;
+
+
+
+/* 공지사항 */
+
+position: absolute;
+width: 133px;
+height: 44px;
+left: 64px;
+top: 1899px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Line 19 */
+
+position: absolute;
+width: 1170px;
+height: 0px;
+left: 64px;
+top: 1964px;
+
+border: 5px solid #92B4EC;
+
+
+/* Group 14 */
+
+position: absolute;
+width: 1088px;
+height: 303px;
+left: 105px;
+top: 2064px;
+
+
+
+/* Line 20 */
+
+position: absolute;
+width: 1088px;
+height: 0px;
+left: 105px;
+top: 2064px;
+
+border: 3px solid #DAE8F6;
+
+
+/* Line 21 */
+
+position: absolute;
+width: 1088px;
+height: 0px;
+left: 105px;
+top: 2165px;
+
+border: 3px solid #DAE8F6;
+
+
+/* Line 22 */
+
+position: absolute;
+width: 1088px;
+height: 0px;
+left: 105px;
+top: 2266px;
+
+border: 3px solid #DAE8F6;
+
+
+/* Line 23 */
+
+position: absolute;
+width: 1088px;
+height: 0px;
+left: 105px;
+top: 2367px;
+
+border: 3px solid #DAE8F6;
+
+
+/* 공지사항 제목입니다 */
+
+position: absolute;
+width: 736px;
+height: 64px;
+left: 130px;
+top: 2084px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+
+/* 공지사항 제목입니다 */
+
+position: absolute;
+width: 736px;
+height: 64px;
+left: 130px;
+top: 2185px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+
+/* 공지사항 제목입니다 */
+
+position: absolute;
+width: 736px;
+height: 64px;
+left: 130px;
+top: 2286px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+
+/* image 1 */
+
+position: absolute;
+width: 1602px;
+height: 994px;
+left: 5291px;
+top: 11678px;
+
+background: url(image.png);

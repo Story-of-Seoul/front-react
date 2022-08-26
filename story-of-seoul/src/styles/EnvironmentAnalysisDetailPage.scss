@@ -1,0 +1,108 @@
+@import "utils.scss";
+
+.EnvironmentAnalysisDetailPage {
+  width: 1300px;
+  height: auto;
+
+  margin-top: 20px;
+
+  #title {
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  .EnvironmentWrapper {
+    width: inherit;
+    height: inherit;
+
+    display: flex;
+    justify-content: space-between;
+
+    .AnalysisWrapper {
+      width: 900px;
+      height: inherit;
+
+      display: flex;
+      justify-content: space-between;
+      background: $PointBackground;
+      border-radius: 20px;
+
+
+      .Analysis {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 10px;
+        width: 590px;
+        height: 1000px;
+
+        background: #FFFFFF;
+        border-radius: 20px;
+      }
+
+      .LineChartWrapper {
+        display: flex;
+        flex-direction: column;
+
+        #temperature_line_chart {
+          width: inherit;
+          height: 300px;
+        }
+      }
+
+      .FineDustTableWrapper {
+        width: inherit;
+        height: 500px;
+        border: 1px solid black;
+      }
+    }
+
+
+    .Contents {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+    }
+  }
+
+  .NewsAndPolicyWrapper {
+    width: 300px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .PolicyWrapper {
+      margin-bottom: 50px;
+    }
+
+
+    #contents {
+      width: 300px;
+      height: 80px;
+      background: $PointBackground;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+
+    button {
+      float: right;
+      display: inline;
+      margin-top: 10px;
+      width: 100px;
+      height: 40px;
+
+      outline: none;
+      background: none;
+      border: none;
+      border-radius: 20px;
+      background: $PointBackground;
+    }
+  }
+
+
+}
+
