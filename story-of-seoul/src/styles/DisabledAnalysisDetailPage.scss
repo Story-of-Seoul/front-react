@@ -1,0 +1,153 @@
+@import "utils.scss";
+
+.DisabledAnalysisDetailPage {
+  width: 1300px;
+  height: auto;
+
+  margin-top: 20px;
+
+  #title {
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  .DisabledWrapper {
+    width: inherit;
+    height: inherit;
+
+    display: flex;
+    justify-content: space-between;
+
+    .AnalysisWrapper {
+      width: 900px;
+      height: inherit;
+
+      display: flex;
+      justify-content: space-between;
+      background: $PointBackground;
+      border-radius: 20px;
+
+      .AnalysisDataWrapper {
+
+        .Analysis {
+          margin: 10px;
+          width: 590px;
+          height: auto;
+
+          background: #FFFFFF;
+          border-radius: 20px;
+
+          .TextAnalysisWrapper {
+            display: flex;
+            flex-direction: column;
+
+            #title {
+              text-align: center;
+            }
+
+            #content {
+              margin-top: 20px;
+              font-size: 24px;
+            }
+
+            .ContentWrapper {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+
+
+              .Total {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              }
+
+              .Rate {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              }
+
+
+            }
+
+          }
+
+          .StickChartWrapper {
+            display: flex;
+            flex-direction: column;
+
+            #stick_chart {
+              width: inherit;
+              height: 300px;
+            }
+
+            .RadioWrapper {
+              width: inherit;
+            }
+
+          }
+
+          .BubbleChartWrapper {
+            display: flex;
+            flex-direction: column;
+
+            #bubble_chart {
+              width: inherit;
+              height: 300px;
+            }
+
+            .RadioWrapper {
+              width: inherit;
+            }
+          }
+        }
+      }
+
+      .Contents {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+      }
+    }
+
+    .NewsAndPolicyWrapper {
+      width: 300px;
+      height: auto;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .PolicyWrapper {
+        margin-bottom: 50px;
+      }
+
+
+      #contents {
+        width: 300px;
+        height: 80px;
+        background: $PointBackground;
+        border-radius: 20px;
+        margin-bottom: 10px;
+      }
+
+    }
+
+    button {
+      float: right;
+      display: inline;
+      margin-top: 10px;
+      width: 100px;
+      height: 40px;
+
+      outline: none;
+      background: none;
+      border: none;
+      border-radius: 20px;
+      background: $PointBackground;
+    }
+  }
+
+}

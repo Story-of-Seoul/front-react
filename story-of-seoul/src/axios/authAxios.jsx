@@ -1,5 +1,5 @@
 import axios from "axios";
-import {logout} from "../modules/auth";
+
 
 
 const authAPI = {
@@ -16,7 +16,7 @@ const authAPI = {
         ).then(response => {
             console.log("response data: " + response.data);
             callback(response.data);
-        }).catch((e) => logout(e));
+        }).catch((e) => console.log(e));
     },
 
     requestSignUp: (request, callback) => {
