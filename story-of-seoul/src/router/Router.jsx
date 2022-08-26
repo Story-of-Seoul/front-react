@@ -19,6 +19,7 @@ import DisabledBoardPage from "../pages/detail/DisabledBoardPage";
 import TrafficBoardPage from "../pages/detail/TrafficBoardPage";
 import SafetyBoardPage from "../pages/detail/SafetyBoardPage";
 import DataRequestWrite from "../pages/DataRequestWrite";
+import DataRequestDetail from "../pages/DataRequestDetail";
 
 const Router = () => {
     return (
@@ -36,6 +37,9 @@ const Router = () => {
             <Route path="/participation/traffic/:id" element={<TrafficBoardPage/>}/>
             <Route path="/participation/safety/:id" element={<SafetyBoardPage/>}/>
             <Route path="/dataRequest" element={<DataRequest/>}/>
+            <Route path="/dataRequest/detail/:id" element={<DataRequestDetail/>}/>
+
+
             <Route path="/dataRequestWrite" element={<DataRequestWrite/>}/>
 
 
