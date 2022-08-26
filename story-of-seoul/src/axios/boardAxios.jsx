@@ -22,12 +22,15 @@ const boardAPI = {
         }).catch((e) => console.log(e));
     },
 
-    requestComment: (comment, callback) => {
+    requestComment: (token, comment, callback) => {
         console.log('calling requestPost from API');
         axios(
             {
-                url: '/board/comments',
+                url: '/comments/',
                 method: 'post',
+                headers: {
+                    Authorization: 'Token ' + token,
+                },
                 data: comment,
                 baseURL: 'http://' + 'localhost' + ':8000',
             }
@@ -63,7 +66,8 @@ const boardAPI = {
             console.log("response data: " + response.data);
             callback(response.data);
         }).catch((e) => console.log(e));
-    }
+    },
+
 
 
 

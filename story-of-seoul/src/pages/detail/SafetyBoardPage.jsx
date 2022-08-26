@@ -7,6 +7,8 @@ import {useParams} from "react-router";
 import BoardView from "../../components/BoardView";
 import analysisAPI from "../../axios/analysisAxios";
 import boardAPI from "../../axios/boardAxios";
+import CommentWrite from "../../components/CommentWrite";
+import CommentList from "../../components/CommentList";
 
 const SafetyBoardPage = () => {
     const {id} = useParams();
@@ -78,6 +80,8 @@ const SafetyBoardPage = () => {
 
             </div>
             <BoardView title={title} contents={contents} likes={likes} comments={comments}/>
+            <CommentList comments={comments}/>
+            <CommentWrite id={id}/>
         </div>
     );
 };

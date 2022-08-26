@@ -111,12 +111,12 @@
             .SearchInsert {
                 
                 position: relative;
-                width: $SearchContentsWidth;
+                width: 400px;
 
                 input {
                     position: relative;
                     z-index: 2;
-                    width: 100%;
+                    width: 400px;
                     height: 40px;
                     font-size: 20px;
                     
@@ -125,7 +125,7 @@
                     border-radius: 20px;
                     outline: none;
                     
-                    margin-top: 30px;
+                    margin-top: 40px;
                     text-align: left;
                     font-size: 18px;
                     
@@ -139,11 +139,11 @@
                     background-color: #92B4EC;
                     position: absolute;
                     border-radius: 30px;
-                    width: 36px;
-                    height: 36px;
-                    // top: 33px;
-                    // right: 10px;
-                    ////////////////
+                    width: 60px;
+                    height: 40px;
+                    top: 40px;
+                    right: -5px;
+
                     
                 }
             }

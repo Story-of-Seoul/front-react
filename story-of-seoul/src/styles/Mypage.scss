@@ -1,109 +1,117 @@
 @import './utils.scss';
 
-.Mypage{
-    .MypageWrapper{
-        display: inline-block;
-  
-        
-        #title{
-            font-size: 33px;
-            margin-bottom: 80px;
-            margin-top: 50px;
-        }
+.Mypage {
+  border: 1px solid black;
+  margin-top: 50px;
+  width: 1600px;
+  height: 800px;
 
-        .Contents{
-            display: inline-block;
-            margin: 10px;
-            width: 300px;
-            height: 400px;
-            .Info{
-         
-                dl{
-                    background: #DAE8F6;
-                    border-radius: 30px;
-                    padding:40px 20px 40px 20px;
-                }
-                dt{
-                    font-size: 24px;
-                    margin: 10px;
-                }
-                dd{
-                    margin-bottom: 20px;
-                }
-               
-            }
 
-            .WriteList{
-                ul{
-                    background: #F8F3E1;
-                    border-radius: 30px;
-                    list-style-type: none;
-                    padding: 10px;
-                    margin:10px
-                }
-                li{
-                   #title{
-                        margin-top: 10px;
-                        font-size: 24px;
-                    }
-                    #contents{
-                        font-size: 20px;
-                        
-                    }
-                    button{
+  #mypage_title {
+    border: 1px solid black;
+    height: 100px;
+    font-size: 24px;
+  }
 
-                        margin-top: 10px;
-                        font-size: 12px;
-                        border: none;
-                        outline: none;
+  .MypageContentsWrapper {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
 
-                        border-radius: 30px;
-                      cursor: pointer;
-                        text-align: center;
-                        background-color: 0;
-                        width: 100px;
-                        display: inline-block; 
+    width: inherit;
+    height: 700px;
 
-                        float: right;
-                    }
-                }
-            }
+    .MyInfoWrapper {
+      border: 1px solid black;
+      width: 600px;
+      height: inherit;
+      display: flex;
+      flex-direction: column;
 
-            .CommentList{
-                ul{
-                    background: #F8F3E1;
-                    border-radius: 30px;
-                    list-style-type: none;
-                    padding: 10px;
-                    margin:10px
-                }
-                li{
-                   #title{
-                        margin-top: 10px;
-                        font-size: 24px;
-                    }
-                    #contents{
-                        font-size: 20px;
-                        
-                    }
-                    button{
-                        margin-top: 10px;
-                        font-size: 12px;
-                        border: none;
-                        outline: none;
+      font-size: 18px;
 
-                        border-radius: 30px;
-                      cursor: pointer;
-                        text-align: center;
-                        background-color: 0;
-                        width: 100px;
-                        display: inline-block; 
+      #my_info_title {
+        margin: 10px;
+      }
 
-                        float: right;
-                    }
-                }
-            }
+      .MyInfoContents {
 
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        height: inherit;
+        background: $PointBackground;
+        border-radius: 20px;
+      }
+
     }
+
+    .PostAndComments {
+      width: 900px;
+      border: 1px solid black;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .PostWrapper {
+        border: 1px solid black;
+        height: 320px;
+
+        #post_title {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+
+        .PostContentsWrapper {
+          overflow: scroll;
+          border: 3px solid #FFE69A;
+
+          border-radius: 20px;
+          height: 270px;
+        }
+      }
+
+      .CommentWrapper {
+
+
+        border: 1px solid black;
+        height: 320px;
+
+        #comment_title {
+          font-size: 24px;
+          margin-bottom: 20px;
+
+        }
+
+        .CommentContentsWrapper {
+          overflow: scroll;
+          border: 3px solid #FFE69A;
+          height: 270px;
+        }
+
+      }
+
+      .dummy {
+        height: 135px;
+        margin: 10px;
+        border-radius: 20px;
+        border: 3px solid $PointBackground;
+
+        display: flex;
+        justify-content: space-between;
+
+        .ButtonWrapper {
+          button{
+            outline: none;
+            border: none;
+            color: rgba(#B3B3B3, 0.8);
+            margin: 5px;
+          }
+        }
+
+      }
+    }
+  }
 }
