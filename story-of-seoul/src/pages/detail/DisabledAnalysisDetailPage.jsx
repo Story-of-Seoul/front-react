@@ -340,7 +340,7 @@ const DisabledAnalysisDetailPage = () => {
                         </div>
 
                         <div className='Contents'>
-                            여기에 분석 내용
+                            
                         </div>
                     </div>
                     <div className='NewsAndPolicyWrapper'>
