@@ -4,22 +4,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 
-    width: 100%;    
-    
+
+    width: 100%;
+
 
     .SignInOrSignUpWrapper {
         position: absolute;
         top: $NavHeight;
         right: 0;
-        
+
         width: 180px;
         // height: fit-content;
 
         margin-top: 10px;
         margin-right: 30px;
-        
+
         border-radius: 30px;
         background: $PointBackground;
 
@@ -44,7 +44,7 @@
 
 
     .ContentsTitle {
-        
+
         width: 200px;
 
 
@@ -54,11 +54,11 @@
         font-size: 30px;
 
         border-bottom: 4px solid $PointBackground;
-        
+
     }
 
     .ContentsWrapper {
-        
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -66,17 +66,17 @@
         width: 1800px;
         height: 574px;
         margin-top: 20px;
-        
+
 
         .AnalysisWrapper {
-       
+
             display: flex;
             justify-content: space-between;
-            
+
             width: 65%;
             min-width: 800px;
             height: 600px;
-        
+
             border: 4px solid $PointBackground;
             border-radius: 20px;
 
@@ -87,15 +87,15 @@
             }
 
             .Analysis {
-                
+
                 align-self: center;
                 margin-right: 50px;
-                
+
             }
         }
 
         .SearchWrapper {
-            
+
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -109,7 +109,7 @@
             border-radius: 20px;
 
             .SearchInsert {
-     
+
                 position: relative;
                 width: 400px;
 
@@ -119,16 +119,16 @@
                     width: 400px;
                     height: 40px;
                     font-size: 20px;
-                    
+
                     background-color: #FFFFFF;
                     border: none;
                     border-radius: 20px;
                     outline: none;
-                    
+
                     margin-top: 40px;
                     text-align: left;
                     font-size: 18px;
-                    
+
                 }
 
                 button {
@@ -139,24 +139,21 @@
                     outline: none;
                     font-size: 20px;
                     background-color: #92B4EC;
-                    
+
                     border-radius: 30px;
 
                     width: 60px;
                     height: 40px;
                     top: 40px;
                     right: -5px;
-                }
-                button:hover{
-                    background-color: #516a93;
-                    color: white;
-                    cursor: pointer;
+
                 }
             }
 
+
             .SearchResultContainer {
                 position: absolute;
-                
+
                 width: $SearchContentsWidth;
                 height: $SearchResultContainerHeight;
                 font-size: 20px;
@@ -167,12 +164,12 @@
             }
 
             .KeywordWrapper {
-                
+
                 position: absolute;
                 margin-top: $SearchResultContainerHeight + 50px;
                 width: $SearchContentsWidth;
                 height: 120px;
-                
+
 
                 display: flex;
                 flex-direction: row;
@@ -180,8 +177,10 @@
                 align-content: space-around;
                 flex-wrap: wrap;
 
+
                 button {
                     
+
                     width: 120px;
                     height: 40px;
                     line-height: 40px;
@@ -206,9 +205,9 @@
 
         width: 1800px;
         height: 574px;
-        
+
         margin-top: 100px;
-        
+
 
         display: flex;
         flex-direction: row;
@@ -222,6 +221,37 @@
                 font-size: 30px;
                 border-bottom: 3px solid #92B4EC;
             }
+          .TableWrapper{
+
+            table {
+                font-size: 20px;
+                margin-bottom: 30px;
+                table-layout: fixed;
+                width: 870px;
+                border-top: 1px solid #B3B3B3;
+                border-collapse: collapse;
+              }
+
+              th, td {
+                position: sticky;
+                text-align: center;
+                border-bottom: 1px solid #B3B3B3;
+                border-left: 1px solid #B3B3B3;
+                padding: 10px;
+              }
+
+              .No{
+                width:40px;
+              }
+
+              .Date{
+                width: 150px;
+              }
+
+              th:first-child, td:first-child {
+                border-left: none;
+              }
+        }
 
             .Board {
                 width: 90%;
@@ -234,11 +264,12 @@
                 padding-left: 10px;
                 font-size: 20px;
             }
+
         }
 
         .HotBoardWrapper {
 
-            
+
             width: 50%;
             margin-left: 60px;
             #title {
@@ -258,11 +289,11 @@
                 font-size: 20px;
             }
         }
-        
+
 
     }
 
 
 
-    
+
 }

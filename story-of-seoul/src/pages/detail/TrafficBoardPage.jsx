@@ -14,7 +14,7 @@ const TrafficBoardPage = () => {
     const [contents, setContents] = useState("");
     const [likes, setLikes] = useState([]);
     const [comments, setComments] = useState([]);
-    useEffect(()=>{
+    useEffect(() => {
         boardAPI.requestBoardById(id, (data) => {
 
             setTitle(data['title']);
@@ -23,7 +23,7 @@ const TrafficBoardPage = () => {
             setComments(data['comments']);
 
         });
-    },[])
+    }, []);
 
     return (
         <div>

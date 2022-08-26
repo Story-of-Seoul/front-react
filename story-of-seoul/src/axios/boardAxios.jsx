@@ -79,6 +79,73 @@ const boardAPI = {
         }).catch((e) => console.log(e));
     },
 
+    requestCommentById: (id, callback) => {
+        axios(
+            {
+                url: '/comments',
+                method: 'get',
+                params: {
+                    author: id
+                },
+                baseURL: 'http://' + 'localhost' + ':8000',
+            }
+        ).then(response => {
+            callback(response.data);
+        }).catch((e) => console.log(e));
+    },
+
+    findBoardById: (id, callback) => {
+        console.log('calling requestPost from API');
+        axios(
+            {
+                url: '/board/',
+                method: 'get',
+                params: {
+                    author: id,
+
+                },
+                baseURL: 'http://' + 'localhost' + ':8000',
+            }
+        ).then(response => {
+
+            callback(response.data);
+        }).catch((e) => console.log(e));
+    },
+
+    deleteComments: (id, token, callback) => {
+        axios(
+            {
+                url: '/comments/' + id,
+                method: 'delete',
+                headers: {
+                    Authorization: 'Token ' + token,
+                },
+                baseURL: 'http://' + 'localhost' + ':8000',
+
+            }
+        ).then(response => {
+
+            callback(response.data);
+        }).catch((e) => console.log(e));
+    },
+
+    putBoards: (board,token, callback) => {
+        axios(
+            {
+                url: '/board/',
+                method: 'post',
+                headers: {
+                    Authorization: 'Token ' + token,
+                },
+                data: board,
+                baseURL: 'http://' + 'localhost' + ':8000',
+            }
+        ).then(response => {
+            callback(response.data);
+        }).catch((e) => console.log(e));
+    }
+
+
 
 }
 

@@ -13,7 +13,14 @@ const ParticipationBoardList = () => {
 
         boardAPI.requestBoard((data) => {
             const response = data['results']
-            setBoards(response);
+
+            const filteredNotice = response.filter(function (elem, index, arr) {
+                return elem.board_type !== "notice";
+            });
+
+            setBoards(filteredNotice.filter(function (elem, index, arr) {
+                return elem.board_type !== "dataRequest";
+            }));
         });
 
     }, [])
@@ -26,20 +33,22 @@ const ParticipationBoardList = () => {
                     return (
                         <div key={index} className='BoardWrapper'>
 
-                                <div id='number'>{item.pk}</div>
-                                <div className='TitleAndContents'>
-                                    <Link to={`/participation/${item.board_type}/${item.pk}`}><div id='board_title'>{item.title}</div></Link>
-                                    <div id='board_contents'>{item.contents}</div>
+                            <div id='number'>{item.pk}</div>
+                            <div className='TitleAndContents'>
+                                <Link to={`/participation/${item.board_type}/${item.pk}`}>
+                                    <div id='board_title'>{item.title}</div>
+                                </Link>
+                                <div id='board_contents'>{item.contents}</div>
+                            </div>
+                            <div className='Etc'>
+                                <div id='created_at'>작성일{new String(item.created_at).split('T')[0]}</div>
+                                <div className='LikeAndComments'>
+                                    <div id='likesR'>추천</div>
+                                    <div id='likes'>{item.likes.length}</div>
+                                    <div id='commentsR'>댓글</div>
+                                    <div id='comments'>{item.comments.length}</div>
                                 </div>
-                                <div className='Etc'>
-                                    <div id='created_at'>작성일{new String(item.created_at).split('T')[0]}</div>
-                                    <div className='LikeAndComments'>
-                                        <div id='likesR'>추천</div>
-                                        <div id='likes'>{item.likes.length}</div>
-                                        <div id='commentsR'>댓글</div>
-                                        <div id='comments'>{item.comments.length}</div>
-                                    </div>
-                                </div>
+                            </div>
 
                         </div>
                     )
