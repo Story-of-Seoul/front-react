@@ -1,14 +1,39 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../../styles/SafetyBoardPage.scss';
 import SocialSafety from "../../components/chart/SocialSafety";
 import Resistance from "../../components/chart/Resistance";
 import Shelter from "../../components/chart/Shelter";
 import {useParams} from "react-router";
 import BoardView from "../../components/BoardView";
+import analysisAPI from "../../axios/analysisAxios";
+import boardAPI from "../../axios/boardAxios";
 
 const SafetyBoardPage = () => {
     const {id} = useParams();
+
+    const [title, setTitle] = useState("");
+    const [contents, setContents] = useState("");
+    const [likes, setLikes] = useState([]);
+    const [comments, setComments] = useState([]);
     const [earthquake, setEarthQuake] = useState();
+
+    useEffect(() => {
+
+        analysisAPI.requestSafetyData((data) => {
+            /** 지진 횟수 **/
+            setEarthQuake(data['earthquake']);
+        });
+
+        boardAPI.requestBoardById(id, (data) => {
+
+            setTitle(data['title']);
+            setContents(data['contents']);
+            setLikes(data['likes']);
+            setComments(data['comments']);
+
+        });
+
+    }, []);
     return (
         <div className='SafetyBoardPage'>
             <div id='title'>안전 관련 데이터</div>
@@ -30,7 +55,6 @@ const SafetyBoardPage = () => {
                                 <Resistance/>
                                 <Shelter/>
                             </div>
-
                         </div>
                     </div>
 
@@ -53,7 +77,7 @@ const SafetyBoardPage = () => {
                 </div>
 
             </div>
-            <BoardView id={id}/>
+            <BoardView title={title} contents={contents} likes={likes} comments={comments}/>
         </div>
     );
 };
