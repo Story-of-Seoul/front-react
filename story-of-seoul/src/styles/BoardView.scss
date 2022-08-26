@@ -70,7 +70,11 @@
       border-radius: 20px;
       background: $PointBackground;
     }
+
+    button:hover{
+      background-color: #92B4EC;
+      cursor: pointer;
+    }
   }
 
-
-}
+  }

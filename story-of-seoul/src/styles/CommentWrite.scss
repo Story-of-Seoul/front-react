@@ -16,8 +16,13 @@
   }
   button {
     border: none;
-    border-left: 3px solid #FFE69A;
+    background-color:  #FFE69A;
     border-radius: 20px;
     width: 100px
+  }
+
+  button:hover{
+    background-color: #FFD24C;
+    cursor: pointer;
   }
 }

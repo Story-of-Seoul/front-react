@@ -249,9 +249,9 @@ const TrafficAnalysisDetailPage = () => {
                         </div>
                     </div>
                     <div className='Contents'>
-                        <div className='AnalyContents'>1번</div>
-                        <div className='AnalyContents'>2번</div>
-                        <div className='AnalyContents'>3번</div>
+                        <div className='AnalyContents'>2010년부터 2021년까지 서울시 유형별 교통사고 발생 현황 그래프입니다. 어린이사고에 대한 관심이 증가함에 따라 어린이 사고율은 줄었으나, 고령운전사고 유형은 큰 폭으로 증가하였습니다.</div>
+                        <div className='AnalyContents'>2010년부터 2021년까지 전년 대비 서울시 교통사고 대상 비율 증가 현황입니다. </div>
+                        <div className='AnalyContents'>2010년부터 2021년까지 서울시 교통사고 원인 구성 비율입니다. 난폭운전이 1순위, 안전거리 미확보와 신호위반 사유가 그 뒤를 잇고 있습니다.</div>
                     </div>
                 </div>
                 <div className='NewsAndPolicyWrapper'>
