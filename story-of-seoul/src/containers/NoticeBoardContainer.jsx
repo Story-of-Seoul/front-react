@@ -1,13 +1,13 @@
 import React from 'react';
-import Board from '../components/Board';
+import BoardView from '../components/BoardView';
 
 const NoticeBoardContainer = () => {
     return(
         <div className="NoticeBoardContainer">
-            <Board/>
-            <Board/>
-            <Board/>
-            <Board/>
+            <BoardView/>
+            <BoardView/>
+            <BoardView/>
+            <BoardView/>
         </div>
     )
 };

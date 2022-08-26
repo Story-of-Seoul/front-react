@@ -35,7 +35,37 @@ const boardAPI = {
             console.log("response data: " + response.data);
             callback(response.data);
         }).catch((e) => console.log(e));
+    },
+
+    requestBoard: (callback) => {
+        console.log('calling requestPost from API');
+        axios(
+            {
+                url: '/board',
+                method: 'get',
+                baseURL: 'http://' + 'localhost' + ':8000',
+            }
+        ).then(response => {
+            console.log("response data: " + response.data);
+            callback(response.data);
+        }).catch((e) => console.log(e));
+    },
+
+    requestBoardById: (id, callback) => {
+        console.log('calling requestPost from API');
+        axios(
+            {
+                url: '/board/' + id,
+                method: 'get',
+                baseURL: 'http://' + 'localhost' + ':8000',
+            }
+        ).then(response => {
+            console.log("response data: " + response.data);
+            callback(response.data);
+        }).catch((e) => console.log(e));
     }
+
+
 
 
 

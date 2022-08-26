@@ -12,6 +12,12 @@ import EnvironmentAnalysisDetailPage from "../pages/detail/EnvironmentAnalysisDe
 import SafetyAnalysisDetailPage from "../pages/detail/SafetyAnalysisDetailPage";
 import TrafficAnalysisDetailPage from "../pages/detail/TrafficAnalysisDetailPage";
 import DisabledAnalysisDetailPage from "../pages/detail/DisabledAnalysisDetailPage";
+import BoardView from "../components/BoardView";
+import Environment from "../components/Environment";
+import EnvironmentBoardPage from "../pages/detail/EnvironmentBoardPage";
+import DisabledBoardPage from "../pages/detail/DisabledBoardPage";
+import TrafficBoardPage from "../pages/detail/TrafficBoardPage";
+import SafetyBoardPage from "../pages/detail/SafetyBoardPage";
 
 const Router = () => {
     return (
@@ -24,7 +30,12 @@ const Router = () => {
             <Route path="/dataAnalysis/traffic" element={<TrafficAnalysisDetailPage/>}/>
             <Route path="/dataAnalysis/disabled" element={<DisabledAnalysisDetailPage/>}/>
             <Route path="/participation" element={<Participation/>}/>
+            <Route path="/participation/environment/:id" element={<EnvironmentBoardPage/>}/>
+            <Route path="/participation/disabled/:id" element={<DisabledBoardPage/>}/>
+            <Route path="/participation/traffic/:id" element={<TrafficBoardPage/>}/>
+            <Route path="/participation/safety/:id" element={<SafetyBoardPage/>}/>
             <Route path="/dataRequest" element={<DataRequest/>}/>
+
 
             <Route path="/mypage" element={<Mypage/>}/>
             <Route path="/signin" element={<SignIn/>}/>
