@@ -3,8 +3,6 @@ import BoardView from "../components/BoardView";
 
 const ParticipationBoardContainer = () => {
 
-
-
     return (
         <div className='ParticipationBoardContainer'>
             <BoardView/>
