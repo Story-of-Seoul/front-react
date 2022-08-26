@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import '../styles/DataRequest.scss';
 import boardAPI from "../axios/boardAxios";
-import {useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 const DataRequest = () => {
 
@@ -63,7 +63,7 @@ const DataRequest = () => {
                                     <tbody>
                                     <tr>
                                         <td>{index+1}</td>
-                                        <td>{item.title}</td>
+                                        <Link to={`/dataRequest/detail/${item.pk}`}><td>{item.title}</td></Link>
                                         <td>{new String(item.created_at).split('T')[0]}</td>
                                         <td>{item.processing_status}</td>
                                     </tr>

@@ -8,12 +8,12 @@ const DataRequestWrite = () => {
     const [token, setToken] = useState("");
 
     let navigate = useNavigate();
-        const kinds = ['environment', 'traffic', 'safety', 'disabled'];
+    const kinds = ['environment', 'traffic', 'safety', 'disabled'];
 
     const [requestBoard, setRequestBoard] = useState({
         "title": "",
         "contents": "",
-        "request_data_type":"",
+        "request_data_type": "",
         "processing_status": "확인 전",
         "board_type": "dataRequest",
     });
@@ -34,7 +34,7 @@ const DataRequestWrite = () => {
     const onChange = (e) => {
         const nextRequestBoard = {
             ...requestBoard,
-            [e.target.name] : e.target.value,
+            [e.target.name]: e.target.value,
         };
         setRequestBoard(nextRequestBoard);
     }
@@ -67,7 +67,8 @@ const DataRequestWrite = () => {
                 </div>
                 <div className='RequestContentsWrapper'>
                     <div id='content_title'>내용</div>
-                    <textarea value={requestBoard['contents']} name="contents" onChange={onChange} rows={23} id='request_content'/>
+                    <textarea value={requestBoard['contents']} name="contents" onChange={onChange} rows={23}
+                              id='request_content'/>
                 </div>
             </div>
             <button onClick={onClick}>작성하기</button>

@@ -5,6 +5,7 @@ import Traffic from "../components/Traffic";
 import Disabled from "../components/Disabled";
 import Safety from "../components/Safety";
 import {useNavigate} from "react-router-dom";
+
 const DataAnalysis = () => {
 
     let navigate = useNavigate();
@@ -13,10 +14,10 @@ const DataAnalysis = () => {
         <div className='DataAnalysis'>
             <div className='DataAnalysisWrapper'>
 
-                    <Environment navigate={navigate}/>
-                    <Traffic navigate={navigate}/>
-                    <Disabled navigate={navigate}/>
-                    <Safety navigate={navigate}/>
+                <Environment navigate={navigate}/>
+                <Traffic navigate={navigate}/>
+                <Disabled navigate={navigate}/>
+                <Safety navigate={navigate}/>
 
             </div>
 

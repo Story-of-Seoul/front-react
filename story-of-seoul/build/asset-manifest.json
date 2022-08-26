@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "./static/css/main.8aa71e38.css",
-    "main.js": "./static/js/main.bc3bd77f.js",
+    "main.css": "./static/css/main.8f226c76.css",
+    "main.js": "./static/js/main.fa43b454.js",
     "static/js/787.b35c604b.chunk.js": "./static/js/787.b35c604b.chunk.js",
+    "static/media/SeoulHangangM.ttf": "./static/media/SeoulHangangM.39f5472180c87ee602e0.ttf",
+    "static/media/SeoulNamsanM.ttf": "./static/media/SeoulNamsanM.047ac59bf87fa6d836a2.ttf",
+    "static/media/Banner_nav.png": "./static/media/Banner_nav.4012486d6a2bc26e9cc5.png",
     "static/media/banner.png": "./static/media/banner.86fa74b31c89bc5e686b.png",
     "index.html": "./index.html",
-    "main.8aa71e38.css.map": "./static/css/main.8aa71e38.css.map",
-    "main.bc3bd77f.js.map": "./static/js/main.bc3bd77f.js.map",
+    "main.8f226c76.css.map": "./static/css/main.8f226c76.css.map",
+    "main.fa43b454.js.map": "./static/js/main.fa43b454.js.map",
     "787.b35c604b.chunk.js.map": "./static/js/787.b35c604b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8aa71e38.css",
-    "static/js/main.bc3bd77f.js"
+    "static/css/main.8f226c76.css",
+    "static/js/main.fa43b454.js"
   ]
 }

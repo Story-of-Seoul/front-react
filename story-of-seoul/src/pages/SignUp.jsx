@@ -45,11 +45,12 @@ const SignUp = () => {
     const onEmailChange = (e => {
 
         const nextEmailConfirm = {
-            ...emailConfirm,
+            ...signUpRequest,
             "email": e.target.value,
         };
 
-        setEmailConfirm(nextEmailConfirm);
+        setSignUpRequest(nextEmailConfirm);
+
     });
 
     /** 인증 번호 입력시 authNumber state에 저장 **/
@@ -127,22 +128,18 @@ const SignUp = () => {
     /** 회원가입 최종 요청 버튼 이메일 검증 했는지 여부 확인 및 모든 데이터가 다 입력되었는지 체크**/
     const onSignUpRequestClick = () => {
 
-        if (isEmailConfirmed === false) {
-            alert('이메일 인증을 진행해 주세요');
-        } else {
-            let isAllInfoNotEmpty = false;
-            for (const value in Object.values(signUpRequest)) {
-                if (value === '') {
-                    isAllInfoNotEmpty = true;
-                }
+        let isAllInfoNotEmpty = false;
+        for (let value of Object.values(signUpRequest)) {
+            if (value === '') {
+                isAllInfoNotEmpty = true;
             }
-
-            isAllInfoNotEmpty === true ? alert('모든 정보를 입력해 주세요') : (authAPI.requestSignUp(signUpRequest, (data) => {
-                console.log('callback -- onSignUpRequestClick data = ' + data);
-                alert('회원가입 완료!');
-                navigate("/");
-            }));
         }
+
+        isAllInfoNotEmpty === true ? alert('모든 정보를 입력해 주세요') : (authAPI.requestSignUp(signUpRequest, (data) => {
+            console.log('callback -- onSignUpRequestClick data = ' + data);
+            alert('회원가입 완료!');
+            navigate("/");
+        }));
 
 
     }
@@ -156,21 +153,16 @@ const SignUp = () => {
                 </div>
                 <div className="Contents">
                     <div className="EmailRequestWrapper">
-                        <input onChange={onEmailChange} value={emailConfirm['email']} type="text"
+                        <input onChange={onEmailChange} value={signUpRequest['email']} type="text"
                                placeholder='이메일을 입력하세요'/>
-                        <button onClick={onAuthNumberRequestClick}>인증번호 요청</button>
                     </div>
-                    <div className="EmailConfirmWrapper">
-                        <input onChange={onAuthNumberChange} value={authNumberInput} type="text"
-                               placeholder='인증번호를 입력하세요'/>
-                        <button onClick={onAuthNumberConfirmClick}>인증번호 확인</button>
-                    </div>
+
                     <div className="NickNameAndRegionWrapper">
                         <input name="nickname" id="nickname" onChange={onSignUpRequestChange} type="text"
                                placeholder='닉네임을 입력하세요'/>
 
                         <select className="SelectRegion" onChange={onRegionChange}>
-                            < option value="" selected disabled hidden >지역구를 선택해주세요.< /option>
+                            < option value="" selected disabled hidden>지역구를 선택해주세요.< /option>
                             {seoulRegion.map((region, index) => (
                                 <option key={index} name="region" value={region}>{region}</option>
                             ))}
@@ -180,7 +172,7 @@ const SignUp = () => {
                     <input name="username" onChange={onSignUpRequestChange} type="text" placeholder='아이디를 입력하세요'/>
                     <input name="password" onChange={onSignUpRequestChange} type="password" placeholder='비밀번호를 입력하세요'/>
                     <select className="SelectGender" onChange={onGenderChange}>
-                        < option value="" selected disabled hidden >성별을 선택해주세요.< /option>
+                        < option value="" selected disabled hidden>성별을 선택해주세요.< /option>
                         <option name="gender" value="남">남</option>
                         <option name="gender" value="여">여</option>
                     </select>
