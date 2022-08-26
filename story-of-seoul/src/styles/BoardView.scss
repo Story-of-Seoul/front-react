@@ -37,7 +37,7 @@
 
       width: 1270px;
       height: 100%;
-      margin: 10px;
+      margin: 30px 30px 30px 40px;
 
       font-size: 20px;
       outline: none;
@@ -47,16 +47,17 @@
 
 
     #board_title {
+      font-size: 24px;
       margin: 0px;
       margin-top: 30px;
-      margin-left: 10px;
+      margin-left: 40px;
     }
   }
 
   button {
     float: right;
     display: inline;
-    margin-top: 10px;
+    margin-top: 30px;
     width: 100px;
     height: 40px;
 
