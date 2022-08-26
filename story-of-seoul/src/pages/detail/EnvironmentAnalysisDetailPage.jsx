@@ -264,6 +264,10 @@ const EnvironmentAnalysisDetailPage = () => {
                         data: fineMonth
                     },
                 ],
+                title: {
+                    text: '2009 ~ 2021년 월별 미세먼지 평균',
+                    align: 'left'
+                },
                 chart: {
                     type: 'bar',
                     height: 350
@@ -313,6 +317,10 @@ const EnvironmentAnalysisDetailPage = () => {
                         data: ultraMonth
                     },
                 ],
+                title: {
+                    text: '2009 ~ 2021년 월별 초미세먼지 평균',
+                    align: 'left'
+                },
                 chart: {
                     type: 'bar',
                     height: 350
@@ -361,6 +369,71 @@ const EnvironmentAnalysisDetailPage = () => {
             const tmp2017 = temperature['2017'];
             const tmp2021 = temperature['2021'];
 
+            const temp2009_2021ChartOptions = {
+                series: [
+                    {
+                        name: '2009년 온도',
+                        data: tmp2009
+                    },
+                    {
+                        name: '2013년 온도',
+                        data: tmp2013
+                    },
+                    {
+                        name: '2017년 온도',
+                        data: tmp2017
+                    },
+                    {
+                        name: '2021년 온도',
+                        data: tmp2021
+                    }
+
+                ],
+                chart: {
+                    type: 'bar',
+                    height: 350
+                },
+                title: {
+                    text: '2009 ~ 2021년 월별 온도 평균',
+                    align: 'left'
+                },
+                plotOptions: {
+                    bar: {
+                        horizontal: false,
+                        columnWidth: '55%',
+                        endingShape: 'rounded'
+                    },
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                stroke: {
+                    show: true,
+                    width: 2,
+                    colors: ['transparent']
+                },
+                xaxis: {
+                    categories: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                },
+                yaxis: {
+                    title: {
+                        text: '도'
+                    }
+                },
+                fill: {
+                    opacity: 1
+                },
+                tooltip: {
+                    y: {
+                        formatter: function (val) {
+                            return "도"
+                        }
+                    }
+                }
+            };
+            const temp2009_2021Chart = new ApexCharts(document.querySelector("#tmp_stick_chart"), temp2009_2021ChartOptions);
+            temp2009_2021Chart.render();
+
         });
     }, []);
 
@@ -374,8 +447,10 @@ const EnvironmentAnalysisDetailPage = () => {
                             <div id='fine_dust_line_chart'></div>
                             <div id='ultra_fine_dust_line_chart'></div>
                             <div id='find_and_ultra_dust_line_chart'></div>
-                            <div id='fine_dust_month_stick_chart'></div>
+                            <div id='find_dust_month_stick_chart'></div>
                             <div id='ultra_fine_dust_month_stick_chart'></div>
+                            <div id='tmp_stick_chart'></div>
+
                         </div>
                     </div>
                     <div className='Contents'>
