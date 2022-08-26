@@ -1,8 +1,13 @@
 
 @import './utils.scss';
-
+@font-face {
+    font-family: 'SeoulHangangM';
+    src: url('../font/SeoulHangangM.ttf');
+  }
 .Nav {
-    
+
+        font-family: 'SeoulHangangM';
+ 
     width: 100vw;
     min-width: 1000px;
     overflow: hidden;
@@ -56,6 +61,9 @@
         }
         #data-request {
             margin-right: $PageSelectorMargin;
+            cursor: pointer;
+        }
+        #my-page{
             cursor: pointer;
         }
         

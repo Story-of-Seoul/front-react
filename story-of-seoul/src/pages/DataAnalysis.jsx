@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Environment from "../components/Environment";
 import '../styles/DataAnalysis.scss';
