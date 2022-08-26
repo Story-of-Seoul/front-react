@@ -59,10 +59,10 @@ const SafetyAnalysisDetailPage = () => {
                     </div>
 
                     <div className='Contents'>
-                        <div className='AnalyContents'>1번</div>
-                        <div className='AnalyContents'>2번</div>
-                        <div className='AnalyContents'>3번</div>
-                        <div className='AnalyContents'>4번</div>
+                        <div className='AnalyContents'>2020년부터 2022년까지의 서울시에서 감지된 지진 횟수입니다. 서울시도 완전한 지진 안전지대가 아님을 시사합니다.</div>
+                        <div className='AnalyContents'>2020년 사회안전에 대한 인식도 통계자료입니다. 12가지 항목 중 '지진 등 자연재해' 항목은 10위를 기록하였습니다. 지진위험에 대한 시민들의 낮은 인식을 확인할 수 있습니다. </div>
+                        <div className='AnalyContents'>2022년 7월 기준 서울시 여러 건축물에 대한 내진설계미완료 건물 수 비율입니다. 대부분 종류의 건물들에서 상당히 높은 비율로 내진설계가 미완료 되어있음을 볼 수 있습니다.</div>
+                        <div className='AnalyContents'>서울시에 존재하는 지진대피소의 구별 총 수용인원과 구별 거주인원을 비교해보았습니다. 해당 구의 모든 인원이 지진 발생 시 해당 대피소로 이동하는 것은 아니지만 그것을 감안해도 수용인원과 거주인원 사이에 큰 차이가 있음을 확인할 수 있습니다.</div>
                     </div>
                 </div>
                 <div className='NewsAndPolicyWrapper'>

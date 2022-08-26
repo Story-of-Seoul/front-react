@@ -19,7 +19,7 @@ const Resistance = () => {
                                 y: buildings['단독주택'][0],
                                 goals: [
                                     {
-                                        name: '내진설계완료',
+                                        name: '내진설계미완료',
                                         value: buildings['단독주택'][1],
                                         strokeHeight: 5,
                                         strokeColor: '#775DD0'
@@ -31,7 +31,7 @@ const Resistance = () => {
                                 y: buildings['공동주택'][0],
                                 goals: [
                                     {
-                                        name: '내진설계완료',
+                                        name: '내진설계미완료',
                                         value: buildings['공동주택'][1],
                                         strokeHeight: 5,
                                         strokeColor: '#775DD0'
@@ -43,7 +43,7 @@ const Resistance = () => {
                                 y: buildings['업무시설'][0],
                                 goals: [
                                     {
-                                        name: '내진설계완료',
+                                        name: '내진설계미완료',
                                         value: buildings['업무시설'][1],
                                         strokeHeight: 5,
                                         strokeColor: '#775DD0'
@@ -55,7 +55,7 @@ const Resistance = () => {
                                 y: buildings['교육연구시설'][0],
                                 goals: [
                                     {
-                                        name: '내진설계완료',
+                                        name: '내진설계미완료',
                                         value: buildings['교육연구시설'][1],
                                         strokeHeight: 5,
                                         strokeColor: '#775DD0'
@@ -67,7 +67,7 @@ const Resistance = () => {
                                 y: buildings['문화 및 집회시설'][0],
                                 goals: [
                                     {
-                                        name: '내진설계완료',
+                                        name: '내진설계미완료',
                                         value: buildings['문화 및 집회시설'][1],
                                         strokeHeight: 5,
                                         strokeColor: '#775DD0'
@@ -79,7 +79,7 @@ const Resistance = () => {
                                 y: buildings['의료시설'][0],
                                 goals: [
                                     {
-                                        name: '내진설계완료',
+                                        name: '내진설계미완료',
                                         value: buildings['의료시설'][1],
                                         strokeHeight: 5,
                                         strokeColor: '#775DD0'
@@ -91,7 +91,7 @@ const Resistance = () => {
                                 y: buildings['제1종 근린생활시설'][0],
                                 goals: [
                                     {
-                                        name: '내진설계완료',
+                                        name: '내진설계미완료',
                                         value: buildings['제1종 근린생활시설'][1],
                                         strokeHeight: 5,
                                         strokeColor: '#775DD0'
@@ -103,7 +103,7 @@ const Resistance = () => {
                                 y: buildings['제2종근린생활시설'][0],
                                 goals: [
                                     {
-                                        name: '내진설계완료',
+                                        name: '내진설계미완료',
                                         value: buildings['제2종근린생활시설'][1],
                                         strokeHeight: 5,
                                         strokeColor: '#775DD0'
@@ -115,7 +115,7 @@ const Resistance = () => {
                                 y: buildings['종교시설'][0],
                                 goals: [
                                     {
-                                        name: '내진설계완료',
+                                        name: '내진설계미완료',
                                         value: buildings['종교시설'][1],
                                         strokeHeight: 5,
                                         strokeColor: '#775DD0'
@@ -127,7 +127,7 @@ const Resistance = () => {
                                 y: buildings['기 타'][0],
                                 goals: [
                                     {
-                                        name: '내진설계완료',
+                                        name: '내진설계미완료',
                                         value: buildings['기 타'][1],
                                         strokeHeight: 5,
                                         strokeColor: '#775DD0'
@@ -156,7 +156,7 @@ const Resistance = () => {
                 legend: {
                     show: true,
                     showForSingleSeries: true,
-                    customLegendItems: ['건물 총계', '내진설계완료'],
+                    customLegendItems: ['건물 총계', '내진설계미완료'],
                     markers: {
                         fillColors: ['#00E396', '#775DD0']
                     }

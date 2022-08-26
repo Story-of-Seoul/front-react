@@ -467,12 +467,12 @@ const EnvironmentAnalysisDetailPage = () => {
                         </div>
                     </div>
                     <div className='Contents'>
-                        <div className='AnalyContents'>1번</div>
-                        <div className='AnalyContents'>2번</div>
-                        <div className='AnalyContents'>3번</div>
-                        <div className='AnalyContents'>4번</div>
-                        <div className='AnalyContents'>5번</div>
-                        <div className='AnalyContents'>6번</div>
+                        <div className='AnalyContents'>2009과 2021년 사이 서울시의 각 구 별 미세먼지 현황을 비교하였습니다. 미세먼지가 감소 추이를 보이는데, 여러 정책들이 시행되고 기술 발전, 사회적 제도들이 이유로 추측됩니다.</div>
+                        <div className='AnalyContents'>2009과 2021년 사이 서울시의 각 구 별 초미세먼지 현황을 비교하였습니다. 미세먼지만큼은 아니여도 초미세먼지도 감소 추이를 보이는데, 이 또한 여러 정책과 기술, 사회적 제도들이 이유로 추측됩니다.</div>
+                        <div className='AnalyContents'>2009년부터 2021년까지의 연 평균 미세먼지와 초미세먼지 추이를 나타내었습니다.<br/> 사용한 데이터셋에서 2014년 초미세먼지 데이터가 부족한 것을 감안하고 비교해야 합니다. 미세먼지는 연도가 지나며 상당 수치 떨어졌지만 초미세먼지는 감소폭이 작은 것을 볼 수 있습니다. </div>
+                        <div className='AnalyContents'>2009년부터 2021년까지의 월별 평균 미세먼지 그래프입니다. 주로 황사가 부는 봄에 수치가 높고 장마로 인해 여름에 수치가 낮음을 볼 수 있습니다.</div>
+                        <div className='AnalyContents'>2009년부터 2021년까지의 월별 평균 초미세먼지 그래프입니다. 미세먼지와 비슷한 추이를 보입니다.</div>
+                        <div className='AnalyContents'>2009년부터 2021년까지의 월별 평균 기온 그래프입니다. 전체적으로 연도가 지나며 여름엔 기온이 오르고 겨울엔 기온이 내려가는 것을 확인할 수 있습니다.</div>
                     </div>
                 </div>
                 <div className='NewsAndPolicyWrapper'>
