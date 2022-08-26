@@ -15,7 +15,7 @@ const EnvironmentBoardPage = () => {
     const [comments, setComments] = useState([]);
 
 
-    useEffect(()=>{
+    useEffect(() => {
         boardAPI.requestBoardById(id, (data) => {
 
             setTitle(data['title']);
@@ -33,7 +33,7 @@ const EnvironmentBoardPage = () => {
             setComments(data['comments']);
 
         });
-    })
+    }, []);
     return (
         <div className='EnviromentBoardPage'>
 

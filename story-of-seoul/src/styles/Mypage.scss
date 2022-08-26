@@ -1,20 +1,19 @@
 @import './utils.scss';
 
 .Mypage {
-  border: 1px solid black;
+  
   margin-top: 50px;
   width: 1600px;
   height: 800px;
 
 
   #mypage_title {
-    border: 1px solid black;
+
     height: 100px;
     font-size: 24px;
   }
 
   .MypageContentsWrapper {
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
 
@@ -22,7 +21,7 @@
     height: 700px;
 
     .MyInfoWrapper {
-      border: 1px solid black;
+
       width: 600px;
       height: inherit;
       display: flex;
@@ -49,14 +48,12 @@
 
     .PostAndComments {
       width: 900px;
-      border: 1px solid black;
 
       display: flex;
       flex-direction: column;
       justify-content: space-around;
 
       .PostWrapper {
-        border: 1px solid black;
         height: 320px;
 
         #post_title {
@@ -76,8 +73,6 @@
 
       .CommentWrapper {
 
-
-        border: 1px solid black;
         height: 320px;
 
         #comment_title {
