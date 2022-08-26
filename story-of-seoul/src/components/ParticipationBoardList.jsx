@@ -34,7 +34,9 @@ const ParticipationBoardList = () => {
                                 <div className='Etc'>
                                     <div id='created_at'>작성일{new String(item.created_at).split('T')[0]}</div>
                                     <div className='LikeAndComments'>
+                                        <div id='likesR'>추천</div>
                                         <div id='likes'>{item.likes.length}</div>
+                                        <div id='commentsR'>댓글</div>
                                         <div id='comments'>{item.comments.length}</div>
                                     </div>
                                 </div>
