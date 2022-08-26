@@ -477,12 +477,13 @@ const DisabledAnalysisDetailPage = () => {
                         </div>
 
                     <div className='Contents'>
-                        <div className='AnalyContents'>1번</div>
-                        <div className='AnalyContents'>2번</div>
-                        <div className='AnalyContents'>3번</div>
-                        <div className='AnalyContents'>4번</div>
-                        <div className='AnalyContents'>5번</div>
-                        <div className='AnalyContents'>6번</div>
+                        <div className='AnalyContents'>2022년 7월 장애인 콜택시 총 이용 건수와 평균 대기시간입니다.</div>
+                        <div className='AnalyContents'>2022년 7월 한달 동안 시간대별 이용량을 시각화 했습니다. 특정 시간에 몰려있는 것을 확인할 수 있습니다.</div>
+                        <div className='AnalyContents'>2022년 7월 한달 동안 요일별 이용량을 시각화 했습니다. 장애인 콜택시 운영시간을 감안해도 주말보다 평일에 이용량이 몰려있는 것을 확인할 수 있습니다.</div>
+                        <div className='AnalyContents'>2022년 7월 한달 동안 일별 이용량을 시각화 했습니다. 위의 요일별 이용량과 연관해서 평일에 이용량이 많고 비교적 월초나 중반에 이용량이 많은 것을 확인할 수 있습니다.</div>
+                        <div className='AnalyContents'>2022년 7월 한달 동안 호출/배차/탑승 세가지 시간들 사이 간격을 시각화 했습니다. 배차가 된 뒤 차에 탑승하기까지 시간이 많이 소요되고, 전체적으로 호출 이후 탑승까지 시간도 상당히 오래 걸리는 것을 확인할 수 있습니다.</div>
+                        <div className='AnalyContents'>2022년 7월 한달 동안 택시 탑승지와 도착지의 비율을 시각화 했습니다. 특정 구에서 많이 탑승하고 하차하며, 대부분 탑승/하차 비율이 비슷하지만 차이가 있는 구도 살펴볼 수 있습니다.</div>
+                        <div className='AnalyContents'>2021년 동안 장애인 콜택시의 iot 데이터를 활용하여 급가속, 급감속, 안전지수를 시각화 했습니다. 운전에 더욱 조심해야하는 장애인 콜택시임에도 불구하고 상당수의 급가속, 급감속 발생 수가 존재함을 볼 수 있습니다.</div>
                     </div>
                 </div>
                 <div className='NewsAndPolicyWrapper'>
