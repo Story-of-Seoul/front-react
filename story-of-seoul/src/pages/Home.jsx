@@ -80,13 +80,13 @@ const Home = () => {
                     <div id="title">
                         공지사항
                     </div>
-                    <NoticeBoardContainer/>
+
                 </div>
                 <div className="HotBoardWrapper">
                     <div id="title">
                         인기글
                     </div>
-                    <HotBoardContainer/>
+
                 </div>
             </div>
             

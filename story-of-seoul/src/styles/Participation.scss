@@ -69,14 +69,18 @@
 
 
         .ParticipationBoardList {
+          margin-top: 20px;
+          margin-bottom: 30px;
           display: flex;
           flex-direction: column;
 
           .BoardWrapper {
             display: flex;
             justify-content: flex-start;
-            border: 3px solid $PointBackground;
+            border: 4px solid $PointBackground;
             border-radius: 20px;
+            margin-bottom: 20px;
+            height: 150px;
 
             #number {
               display: flex;
@@ -84,7 +88,10 @@
               justify-content: center;
               width: 50px;
               height: 50px;
-              border: 1px solid black;
+              margin-left: 10px;
+              margin-right: 20px;
+              border-radius: 50px;
+              background-color: #F8F3E1;
             }
             .TitleAndContents {
 
@@ -96,43 +103,66 @@
               height: 100px;
 
               align-content: center;
-              border: 1px solid black;
+              // border: 1px solid black;
 
               #board_title {
                 font-size: 24px;
                 display: flex;
-                border: 1px solid black;
+                text-decoration-line: underline;
+                text-decoration-color: $PointBackground;
+                text-decoration-thickness: 3px;
+                text-underline-offset: 10px;
+           
               }
               #board_contents {
                 font-size: 20px;
-                border: 1px solid black;
+                // border: 1px solid black;
+           
               }
             }
             .Etc {
               width: 250px;
-              border: 1px solid black;
+              // border: 1px solid black;
               display: flex;
               flex-direction: column;
               justify-content: space-between;
 
               #created_at {
-                border: 1px solid black;
+                // border: 1px solid black;
+                margin-top: 10px;
+                margin-right: 10px;
                 display: flex;
                 justify-content: flex-end;
               }
 
               .LikeAndComments {
+                margin-bottom: 10px;
+                margin-left: 20px;
                 display: flex;
                 flex-direction: row;
+                #likesR{
+                  border-radius: 30px;
+                  background-color: rgb(206, 204, 204);
+                  
+                }
                 #likes {
-
+                  margin-left: 10px;
+                }
+                #commentsR{
+                  margin-left: 20px;
+                  border-radius: 30px;
+                  background-color: rgb(206, 204, 204);
                 }
                 #comments{
-
+                  margin-left: 10px;
                 }
               }
             }
 
+          }
+
+          .BoardWrapper:hover{
+            background-color: $PointBackground;
           }
         }
 

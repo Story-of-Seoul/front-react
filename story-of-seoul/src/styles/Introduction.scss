@@ -1,9 +1,12 @@
 
 
-
+@font-face {
+    font-family: 'SeoulHangangM';
+    src: url('../font/SeoulHangangM.ttf');
+  }
 
 .Introduction {
-
+    font-family: 'SeoulHangangM';
     position: relative;
     width: 1800px;
     
@@ -25,7 +28,7 @@
         line-height: 50px;
         text-align: center;
         margin-left: 200px;
-        font-size: 22px;
+        font-size: 30px;
     }
 
     img {
