@@ -109,7 +109,7 @@
             border-radius: 20px;
 
             .SearchInsert {
-                
+     
                 position: relative;
                 width: $SearchContentsWidth;
 
@@ -132,15 +132,17 @@
                 }
 
                 button {
+                    position: absolute;
+
                     z-index: 2;
                     border: none;
                     outline: none;
                     font-size: 20px;
                     background-color: #92B4EC;
-                    position: absolute;
+                    
                     border-radius: 30px;
-                    width: 36px;
-                    height: 36px;
+                    width: 40px;
+                    height: 40px;
                     // top: 33px;
                     // right: 10px;
                     ////////////////
