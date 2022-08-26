@@ -1,10 +1,19 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import ApexCharts from "apexcharts";
 import analysisAPI from "../axios/analysisAxios";
 
 const Safety = (props) => {
 
+    const [newsTotal, setNewsTotal] = useState();
+    const [policyTotal, setPolicyTotal] = useState();
+
     useEffect(() => {
+
+        analysisAPI.requestNewsPolicyTotal('safe', (data) => {
+            setNewsTotal(data['news']);
+            setPolicyTotal(data['policy']);
+        })
+
         analysisAPI.requestSafetyData((data) => {
             /** 안전 인식 **/
             const awarenessData = data['awareness'];
@@ -82,8 +91,8 @@ const Safety = (props) => {
             <div id='social_safety_chart'></div>
             {/*<Safety/>*/}
             <div className='EtcWrapper'>
-                <div id='news'>관련 뉴스<span>{7}</span></div>
-                <div id='policy'>관련 정책<span>{1}</span></div>
+                <div id='news'>관련 뉴스<span>{newsTotal}</span></div>
+                <div id='policy'>관련 정책<span>{policyTotal}</span></div>
             </div>
         </div>
     );

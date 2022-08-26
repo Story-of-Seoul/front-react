@@ -8,6 +8,9 @@ const EnvironmentAnalysisDetailPage = () => {
 
     const [isBoardWriteClicked, setIsBoardWriteClicked] = useState(false);
 
+    const [news, setNews] = useState([]);
+    const [policies, setPolicies] = useState([]);
+
     const seoulRegion = [
         '종로구', '중구', '용산구', '성동구', '광진구', '동대문구', '중랑구',
         '성북구', '강북구', '도봉구', '노원구', '은평구', '서대문구', '마포구',
@@ -16,6 +19,16 @@ const EnvironmentAnalysisDetailPage = () => {
     ];
 
     useEffect(() => {
+
+        analysisAPI.requestNewsPolicy('environment', (data) => {
+
+            const newsData = data['news'];
+            const policyData = data['policy'];
+            setNews(newsData);
+            setPolicies(policyData);
+
+        });
+
 
         analysisAPI.requestEnvironmentData((data) => {
 
@@ -460,14 +473,29 @@ const EnvironmentAnalysisDetailPage = () => {
                 <div className='NewsAndPolicyWrapper'>
                     <div className='PolicyWrapper'>
                         <div id='title'>관련정책</div>
-                        <div id='contents'></div>
-                        <div id='contents'></div>
+                        {policies ? policies.map((item, index) => {
+                            return (
+                                <div key={index} className='Contents'>
+                                    <div id='policy_title'>{item.title}</div>
+                                    <div id='policy_content'>{item.content}</div>
+                                    <a id='policy_link' href={item.url}>링크</a>
+                                </div>
+                            )
+                        }) : ''}
+
                     </div>
 
                     <div className='NewsWrapper'>
                         <div id='title'>관련뉴스</div>
-                        <div id='contents'></div>
-                        <div id='contents'></div>
+                        {news ? news.map((item, index) => {
+                            return (
+                                <div key={index} className='Contents'>
+                                    <div id='news_title'>{item.title}</div>
+                                    <div id='news_content'>{item.content}</div>
+                                    <a id='news_link' href={item.url}>링크</a>
+                                </div>
+                            )
+                        }) : ''}
                     </div>
                     {isBoardWriteClicked === false ?
                         <button onClick={() => setIsBoardWriteClicked(true)}>게시글 작성</button> : null}

@@ -6,8 +6,19 @@ import BoardWrite from "../../components/BoardWrite";
 
 const TrafficAnalysisDetailPage = () => {
 
+    const [news, setNews] = useState([]);
+    const [policies, setPolicies] = useState([]);
     const [isBoardWriteClicked, setIsBoardWriteClicked] = useState(false);
     useEffect(() => {
+
+        analysisAPI.requestNewsPolicy('accident', (data) => {
+
+            const newsData = data['news'];
+            const policyData = data['policy'];
+            setNews(newsData);
+            setPolicies(policyData);
+
+        });
 
         analysisAPI.requestTrafficData((data) => {
 
@@ -202,7 +213,7 @@ const TrafficAnalysisDetailPage = () => {
                     text: '2010 - 2021 서울시 교통사고 원인 구성 비율',
                     align: 'left'
                 },
-                labels: ['과속', '증잉선침범', '신호위반', '안전거리미확보', '난폭운전','보행자보호의무위반'],
+                labels: ['과속', '증잉선침범', '신호위반', '안전거리미확보', '난폭운전', '보행자보호의무위반'],
                 responsive: [{
                     breakpoint: 480,
                     options: {
@@ -244,17 +255,31 @@ const TrafficAnalysisDetailPage = () => {
                 <div className='NewsAndPolicyWrapper'>
                     <div className='PolicyWrapper'>
                         <div id='title'>관련정책</div>
-                        <div id='contents'></div>
-                        <div id='contents'></div>
+                        {policies ? policies.map((item, index) => {
+                            return (
+                                <div key={index} className='Contents'>
+                                    <div id='policy_title'>{item.title}</div>
+                                    <div id='policy_content'>{item.content}</div>
+                                    <a id='policy_link' href={item.url}>링크</a>
+                                </div>
+                            )
+                        }) : ''}
                     </div>
 
                     <div className='NewsWrapper'>
                         <div id='title'>관련뉴스</div>
-                        <div id='contents'></div>
-                        <div id='contents'></div>
+                        {news ? news.map((item, index) => {
+                            return (
+                                <div key={index} className='Contents'>
+                                    <div id='news_title'>{item.title}</div>
+                                    <div id='news_content'>{item.content}</div>
+                                    <a id='news_link' href={item.url}>링크</a>
+                                </div>
+                            )
+                        }) : ''}
                     </div>
                     {isBoardWriteClicked === false ?
-                    <button onClick={() => setIsBoardWriteClicked(true)}>게시글 작성</button> : null}
+                        <button onClick={() => setIsBoardWriteClicked(true)}>게시글 작성</button> : null}
                 </div>
             </div>
             {isBoardWriteClicked === true ? <BoardWrite boardType={'traffic'}/> : null}

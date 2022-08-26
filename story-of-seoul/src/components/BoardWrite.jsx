@@ -34,7 +34,7 @@ const BoardWrite = (props) => {
                 console.log(data);
                 alert('게시글 작성 완료');
                 // 상세 페이지로 이동하게 하자
-                navigate('/participation/' + data['pk']);
+                navigate('/participation/'+ props.boardType + data['pk']);
             });
         } else {
             alert('로그인이 필요합니다.');

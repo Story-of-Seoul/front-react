@@ -106,8 +106,9 @@
 
       .Contents {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         width: 300px;
       }
     }
@@ -125,12 +126,42 @@
       }
 
 
-      #contents {
-        width: 300px;
-        height: 80px;
+      .Contents {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        width: 450px;
+        height: 100px;
         background: $PointBackground;
         border-radius: 20px;
         margin-bottom: 10px;
+
+        #policy_title {
+          width: inherit;
+          font-size: 18px;
+        }
+
+        #policy_content {
+          width: inherit;
+          font-size: 16px;
+
+        }
+
+        #news_title {
+          width: inherit;
+          font-size: 18px;
+        }
+
+        #news_content {
+          width: inherit;
+          font-size: 16px;
+
+        }
+
+        .AnalContents {
+
+        }
       }
 
     }
