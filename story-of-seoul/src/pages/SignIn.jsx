@@ -34,15 +34,24 @@ const SignIn = () => {
 
     const onSubmit = e => {
         e.preventDefault();
-        console.log(signInRequest);
+
         authAPI.requestSignIn(signInRequest, (data) => {
-            console.log('callback -- onSubmit data = ' + data['token']);
+
             dispatch(onSignIn(data['token']));
             window.localStorage.setItem('token', JSON.stringify(data['token']));
             navigate('/');
-            console.log('local storage: ' + JSON.parse(window.localStorage.getItem('token')));
+
         });
     };
+
+    const onClick = () => {
+        authAPI.requestSignIn(signInRequest, (data) => {
+            dispatch(onSignIn(data['token']));
+            window.localStorage.setItem('token', JSON.stringify(data['token']));
+            navigate('/');
+
+        });
+    }
 
     const onKeyDown = e => {
         if (e.key === 'Enter') {
@@ -73,7 +82,7 @@ const SignIn = () => {
                     </form>
 
                     <div className='SignInButtonWrapper'>
-                        <button>로그인</button>
+                        <button onClick={onClick}>로그인</button>
                     </div>
 
                     <div id ='signup'>
@@ -81,7 +90,7 @@ const SignIn = () => {
                     </div>
                     
                     <div className='SignUpWrapper'>
-                        <button>회원가입</button>
+                        <button onClick={()=>navigate('/signup')}>회원가입</button>
                     </div>
                 </div>
             </div>
