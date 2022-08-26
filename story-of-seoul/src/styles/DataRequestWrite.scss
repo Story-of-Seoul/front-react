@@ -1,33 +1,138 @@
+@import 'utils';
 
 .DataRequestWrite {
-  width: 1600px;
-  border: 1px solid black;
 
+  margin-top: 30px;
+  width: 1600px;
+  height: 1000px;
   font-size: 24px;
-  #data_request_title{
+
+  #data_request_title {
     height: 100px;
+    margin: 10px;
+    font-size: 36px;
   }
 
-  .DataRequestContentsWrapper{
+  .DataRequestContentsWrapper {
     display: flex;
     flex-direction: column;
     width: inherit;
-    height: 800px;
-    border: 1px solid black;
+    height: 900px;
+
 
     .TitleWrapper {
       display: flex;
+      height: 80px;
       flex-direction: row;
-      width: 300px;
-      border: 1px solid black;
+      align-items: center;
+      width: inherit;
+      border-top: 1px solid black;
+
+      #request_title {
+        border-right: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: inherit;
+
+      }
+
+      input {
+        border: none;
+        outline: none;
+        width: inherit;
+        font-size: 28px;
+        padding: 5px;
+      }
     }
+
     .EtcWrapper {
+      width: inherit;
       display: flex;
+      height: 80px;
       flex-direction: row;
+      align-items: center;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+
+      #kinds_title {
+        border-right: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 57px;
+        height: inherit;
+      }
+
+      select {
+        border: none;
+        outline: none;
+        width: 1000px;
+        font-size: 28px;
+
+      }
+
+      #author_title {
+        width: 200px;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+      }
+
+      #author_name {
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+      }
+
     }
+
     .RequestContentsWrapper {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      width: inherit;
+      height: inherit;
+
+      border-bottom: 1px solid black;
+
+      #content_title {
+        border-right: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 750px;
+      }
+
+      textarea {
+        border: none;
+        outline: none;
+        width: inherit;
+        font-size: 28px;
+        padding: 5px;
+      }
     }
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    background: $PointBackground;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+
+
   }
 }

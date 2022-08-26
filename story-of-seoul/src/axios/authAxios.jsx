@@ -1,11 +1,7 @@
 import axios from "axios";
 
-
-
 const authAPI = {
     requestEmailAuthNumber: (email, callback) => {
-        console.log('calling requestAuthNumber from API');
-        console.log('request data = ' + email['email']);
         axios(
             {
                 url: 'account/signup/email',
@@ -14,14 +10,11 @@ const authAPI = {
                 baseURL: 'http://' + 'localhost' + ':8000',
             }
         ).then(response => {
-            console.log("response data: " + response.data);
             callback(response.data);
         }).catch((e) => console.log(e));
     },
 
     requestSignUp: (request, callback) => {
-        console.log('calling requestSignUp API');
-        console.log('request data = ' + request);
         axios(
             {
                 url: 'account/signup/',
@@ -30,7 +23,6 @@ const authAPI = {
                 baseURL: 'http://' + 'localhost' + ':8000',
             }
         ).then(response => {
-            console.log('response data: ' + response.data);
             callback(response.data);
         }).catch(e => {
             console.log(e);
@@ -38,9 +30,6 @@ const authAPI = {
     },
 
     requestSignIn: (request, callback) => {
-        console.log('calling requestSignIn API');
-        console.log('request username = ' + request['username']);
-        console.log('request username = ' + request['password']);
         axios(
             {
                 url: 'account/signin/',
@@ -54,7 +43,25 @@ const authAPI = {
         }).catch(e => {
             console.log(e);
         });
-    }
+    },
+    requestAuth: (token, callback) => {
+        axios(
+            {
+                url: 'account/mypage/',
+                method: 'get',
+                headers: {
+                    Authorization: 'Token ' + token,
+                },
+                baseURL: 'http://' + 'localhost' + ':8000',
+            }
+        ).then(response => {
+            callback(response.data);
+        }).catch(e => {
+            console.log(e);
+        });
+    },
+
+
 
 }
 
