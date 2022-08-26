@@ -11,10 +11,14 @@ const BoardView = (props) => {
                 <div className='HorizonalLine'/>
                 <div id='board_contents'>{props.contents}</div>
             </div>
-            <button onClick={null}>종하요<span>{props.likes ? props.likes.length : ''}</span></button>
-            <button onClick={null}>댓글<span>{props.comments ? props.comments.length : ''}</span></button>
+            <div className='LikeCommentWrapper'>
+                <button onClick={null}>좋아요<span>{props.likes ? props.likes.length : ''}</span></button>
+                <button onClick={null}>댓글<span>{props.comments ? props.comments.length : ''}</span></button>
+            </div>
+
         </div>
     );
 };
+
 
 export default BoardView;

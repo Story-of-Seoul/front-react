@@ -13,7 +13,7 @@
   .BoardViewWrapper {
 
     .HorizonalLine {
-      border: 1px solid rgba(#B3B3B3,0.5);
+      border: 1px solid rgba(#B3B3B3, 0.5);
       width: 1270px;
       margin: 10px;
     }
@@ -54,6 +54,9 @@
     }
   }
 
+
+  .LikeCommentWrapper {
+
   button {
     float: right;
     display: inline;
@@ -61,11 +64,25 @@
     width: 100px;
     height: 40px;
 
-    outline: none;
-    background: none;
-    border: none;
-    border-radius: 20px;
-    background: $PointBackground;
+
+    height: 52px;
+    display: flex;
+    justify-content: flex-end;
+    width: inherit;
+
+    button {
+      margin-top: 10px;
+      margin-left: 30px;
+      width: 100px;
+      height: 40px;
+
+      outline: none;
+      background: none;
+      border: none;
+      border-radius: 20px;
+      background: $PointBackground;
+    }
   }
+
 
 }

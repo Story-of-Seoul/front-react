@@ -1,0 +1,23 @@
+
+
+
+.CommentWrite {
+  margin-top: 30px;
+  display: flex;
+  height: 100px;
+  border: 3px solid #FFE69A;
+  border-radius: 20px;
+
+  textarea {
+    width: 1200px;
+    margin: 10px;
+    border: none;
+    outline: none;
+  }
+  button {
+    border: none;
+    border-left: 3px solid #FFE69A;
+    border-radius: 20px;
+    width: 100px
+  }
+}

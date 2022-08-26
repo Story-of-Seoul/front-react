@@ -1,90 +1,85 @@
 import React, {useEffect} from 'react';
 import ApexCharts from "apexcharts";
+import analysisAPI from "../axios/analysisAxios";
 
 const Safety = (props) => {
 
-    let options = {
-        series: [
-            {
-                name: "테스트1",
-                data: [8, 10, 11]
-            },
-            {
-                name: "테스트2",
-                data: [1, 2, 3]
-            },
-            {
-                name: "테스트3",
-                data: [13, 17, 19]
-            },
-        ],
-        chart: {
-            height: 240,
-            type: 'bar',
-            dropShadow: {
-                enabled: true,
-                color: '#000',
-                top: 18,
-                left: 7,
-                blur: 10,
-                opacity: 0.2
-            },
-            toolbar: {
-                show: false
-            }
-        },
-        colors: ['#77B6EA', '#545454'],
-        dataLabels: {
-            enabled: true,
-        },
-        stroke: {
-            curve: 'smooth'
-        },
-        title: {
-            text: '미세먼지 차트',
-            align: 'left'
-        },
-        grid: {
-            borderColor: '#e7e7e7',
-            row: {
-                colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
-                opacity: 0.5
-            },
-        },
-        markers: {
-            size: 1
-        },
-        xaxis: {
-            categories: ['2010', '2011', '2012'],
-            title: {
-                text: 'Year'
-            }
-        },
-        yaxis: {
-            title: {
-                text: '미세먼지 정도'
-            },
-        },
-        legend: {
-            position: 'top',
-            horizontalAlign: 'right',
-            floating: true,
-            offsetY: -25,
-            offsetX: -5
-        },
-
-    };
-
     useEffect(() => {
-        const chart = new ApexCharts(document.querySelector('#safety_chart'), options);
-        chart.render();
+        analysisAPI.requestSafetyData((data) => {
+            /** 안전 인식 **/
+            const awarenessData = data['awareness'];
+
+            let awarenessDataArray = []
+            for (const key in awarenessData) {
+                awarenessDataArray.push(awarenessData[key]);
+            }
+
+            let socialSafetyChartOptions = {
+                series: [{
+                    data: awarenessDataArray
+                }],
+                title: {
+                    text: '2020년 사회안전에 대한 인식도',
+                    align: 'left',
+                    style: {
+                        fontSize: '16px',
+                        color: '#263238'
+                    }
+                },
+                chart: {
+                    width: 420,
+                    height: 300,
+                    type: 'bar',
+                },
+                colors: ['#81c285', '#b84938', '#5522cc', '#aa4f0d',
+                    '#b47ee8', '#8cddf3', '#6570c7', '#19d904',
+                    '#3a125d', '#513d63', '#f0fcce', '#c4d527'],
+                plotOptions: {
+                    bar: {
+                        columnWidth: '45%',
+                        distributed: true,
+                    }
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                legend: {
+                    show: false
+                },
+                xaxis: {
+                    categories: [
+                        ['전반적인', '사회안전'],
+                        ['국가안보'],
+                        ['지진 등', '자연재해'],
+                        ['건축물', '시설물'],
+                        ['교통사고'],
+                        ['화재', '산불'],
+                        ['먹거리'],
+                        ['식량안보'],
+                        ['정보보안'],
+                        ['신종', '점염병'],
+                        ['범죄위험'],
+                        ['개인정보', '유출'],
+                    ],
+                },
+                yaxis: {
+                    title: {
+                        text: '불안, 매우불안 합계'
+                    }
+                }
+            };
+
+            /** 안전 인식도 차트 랜더링 **/
+            const socialSafetyChart = new ApexCharts(document.querySelector("#social_safety_chart"), socialSafetyChartOptions);
+            socialSafetyChart.render();
+        });
     }, []);
     return (
         <div className='AnalysisContentsWrapper' onClick={() => {
             props.navigate('/dataAnalysis/safety')
         }}>
             <div id='title'>안전관련 데이터</div>
-            <div id='safety_chart'></div>
+            <div id='social_safety_chart'></div>
             {/*<Safety/>*/}
             <div className='EtcWrapper'>
                 <div id='news'>관련 뉴스<span>{7}</span></div>

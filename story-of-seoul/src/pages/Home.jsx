@@ -47,7 +47,7 @@ const Home = () => {
 
     return (
         <div className='Home'>
-            {/* todo : 로그인 했을 경우에는 로그아웃 버튼 띄우기 */}
+
             {isLogin === false ? (<div className="SignInOrSignUpWrapper">
                 <div className="SignInButton" onClick={() => navigate("/signin")}>로그인</div>
                 <div>/</div>
