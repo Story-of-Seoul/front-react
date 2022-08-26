@@ -12,10 +12,12 @@ const DataAnalysis = () => {
     return (
         <div className='DataAnalysis'>
             <div className='DataAnalysisWrapper'>
-                <Environment navigate={navigate}/>
-                <Traffic navigate={navigate}/>
-                <Disabled navigate={navigate}/>
-                <Safety navigate={navigate}/>
+
+                    <Environment navigate={navigate}/>
+                    <Traffic navigate={navigate}/>
+                    <Disabled navigate={navigate}/>
+                    <Safety navigate={navigate}/>
+
             </div>
 
         </div>
